@@ -1,5 +1,26 @@
 <x-guest-layout>
-    <h1>Privacy Policy for Digital Marketing Kenya</h1>
+    <div class="relative px-4 sm:px-6 lg:px-8 mt-12">
+        <div class="text-lg max-w-prose mx-auto">
+            <h1>
+                <span class="block text-base text-center text-indigo-600 font-semibold tracking-wide uppercase">{{ $blog->title }}</span>
+                <span class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">{{ $blog->title }}</span>
+            </h1>
+        </div>
+        <div class="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
+
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8438942375783163"
+                    crossorigin="anonymous"></script>
+            <ins class="adsbygoogle"
+                 style="display:block; text-align:center;"
+                 data-ad-layout="in-article"
+                 data-ad-format="fluid"
+                 data-ad-client="ca-pub-8438942375783163"
+                 data-ad-slot="9183144582"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+
+            <h1>Privacy Policy for Digital Marketing Kenya</h1>
 
     <p>At Digital Marketing Kenya, accessible from http://digitalmarketingkenya.com/, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Digital Marketing Kenya and how we use it.</p>
 
@@ -84,4 +105,8 @@
     <p>Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.</p>
 
     <p>Digital Marketing Kenya does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
+
+        </div>
+    </div>
+    
 </x-guest-layout>
