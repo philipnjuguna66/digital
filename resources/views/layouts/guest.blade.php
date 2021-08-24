@@ -17,6 +17,9 @@
     <!-- Scripts -->
     <script src="{{ mix('js/app.js') }}" defer></script>
 
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8438942375783163"
+            crossorigin="anonymous"></script>
+    
     @livewireStyles
 </head>
 <body class="bg-white">
