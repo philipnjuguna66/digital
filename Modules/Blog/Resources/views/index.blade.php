@@ -43,6 +43,9 @@
                         </div>
                     @endforeach
 
+                        <nav class="relative z-0 inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination">
+                            {!! $blogs->links() !!}
+                        </nav>
 
                 </div>
             </div>
