@@ -33,8 +33,7 @@
 
         @include('layouts.nav-menu')
         <main>
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8438942375783163"
-                    crossorigin="anonymous"></script>
+
             <!-- display ads -->
             <ins class="adsbygoogle"
                  style="display:block"
@@ -42,9 +41,17 @@
                  data-ad-slot="8520733366"
                  data-ad-format="auto"
                  data-full-width-responsive="true"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
+
+
+
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8438942375783163"
+                    crossorigin="anonymous"></script>
+            <ins class="adsbygoogle"
+                 style="display:block; text-align:center;"
+                 data-ad-layout="in-article"
+                 data-ad-format="fluid"
+                 data-ad-client="ca-pub-8438942375783163"
+                 data-ad-slot="9183144582"></ins>
 
             {{$slot}}
         </main>
@@ -53,6 +60,10 @@
 
 
 </div>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 @livewireScripts
 </body>
 </html>
