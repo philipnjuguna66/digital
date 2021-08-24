@@ -19,6 +19,9 @@ use Modules\Blog\Http\Controllers\BlogController;
 |
 */
 
+Route::get('/sitemap.xml', function (){
+    return view('sitemap');
+})->name('blog.index');
 Route::get('/', [BlogController::class ,'index'])->name('blog.index');
 Route::get('/{blog:slug}', [BlogController::class ,'show'])->name('blog.show');
 
