@@ -21,7 +21,14 @@ use Modules\Blog\Http\Controllers\BlogController;
 
 Route::get('/sitemap.xml', function (){
     return view('sitemap');
-})->name('blog.index');
+});
+
+
+Route::get('/privacy-policy', function (){
+    return view('privacy-policy.blade.php');
+});
+
+
 Route::get('/', [BlogController::class ,'index'])->name('blog.index');
 Route::get('/{blog:slug}', [BlogController::class ,'show'])->name('blog.show');
 
