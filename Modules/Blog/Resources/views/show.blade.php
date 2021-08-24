@@ -15,6 +15,15 @@
             </h1>
         </div>
         <div class="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
+            <amp-ad width="100vw" height="320"
+                    type="adsense"
+                    data-ad-client="ca-pub-8438942375783163"
+                    data-ad-slot="8520733366"
+                    data-auto-format="rspv"
+                    data-full-width="">
+                <div overflow=""></div>
+            </amp-ad>
+
             {!! $blog->content !!}
             </p>
         </div>
