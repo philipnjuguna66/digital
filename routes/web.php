@@ -25,7 +25,7 @@ Route::get('/sitemap.xml', function (){
 
 
 Route::get('/privacy-policy', function (){
-    return view('privacy-policy.blade.php');
+    return view('privacy-policy');
 });
 
 
