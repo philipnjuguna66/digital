@@ -23,4 +23,8 @@ class Blog extends Model
     }
 
 
+    public function scopePublished($query)
+    {
+        return $query->where('is_published', true);
+    }
 }
