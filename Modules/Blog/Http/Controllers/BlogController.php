@@ -15,7 +15,7 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $blogs = Blog::query()->paginate(10);
+        $blogs = Blog::query()->latest('id')->paginate(10);
 
         return view('blog::index')->with([
             'blogs' => $blogs
