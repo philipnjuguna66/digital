@@ -18,42 +18,9 @@
         <div class="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
 
 
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8438942375783163"
-                    crossorigin="anonymous"></script>
-            <ins class="adsbygoogle"
-                 style="display:block; text-align:center;"
-                 data-ad-layout="in-article"
-                 data-ad-format="fluid"
-                 data-ad-client="ca-pub-8438942375783163"
-                 data-ad-slot="4381467362"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-
-            <amp-ad width="100vw" height="320"
-                    type="adsense"
-                    data-ad-client="ca-pub-8438942375783163"
-                    data-ad-slot="6377075317"
-                    data-auto-format="rspv"
-                    data-full-width="">
-                <div overflow=""></div>
-            </amp-ad>
             
-
             {!! $blog->content !!}
 
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8438942375783163"
-                    crossorigin="anonymous"></script>
-            <!-- Display Ads -->
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-8438942375783163"
-                 data-ad-slot="6377075317"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
 
         </div>
     </div>
