@@ -18,6 +18,7 @@
     <script src="{{ mix('js/app.js') }}" defer></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8438942375783163"
             crossorigin="anonymous"></script>
+    <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
 
     @livewireStyles
 </head>
@@ -35,7 +36,14 @@
 
             {{$slot}}
 
-
+            <amp-ad width="100vw" height="320"
+                    type="adsense"
+                    data-ad-client="ca-pub-8438942375783163"
+                    data-ad-slot="6377075317"
+                    data-auto-format="rspv"
+                    data-full-width="">
+                <div overflow=""></div>
+            </amp-ad>
 
         </main>
 
