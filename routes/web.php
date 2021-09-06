@@ -7,6 +7,7 @@ use Illuminate\Support\Str;
 use Maatwebsite\Excel\Facades\Excel;
 use Modules\Blog\Entities\Blog;
 use Modules\Blog\Http\Controllers\BlogController;
+use Spatie\Sitemap\SitemapGenerator;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,7 +21,10 @@ use Modules\Blog\Http\Controllers\BlogController;
 */
 
 Route::get('/sitemap.xml', function (){
-    return view('sitemap');
+
+    return SitemapGenerator::create(url('/'))->getSitemap()->writeToDisk('public', 'sitemap.xml');
+
+
 });
 
 
