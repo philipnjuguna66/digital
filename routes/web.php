@@ -37,6 +37,18 @@ Route::get('/', [BlogController::class ,'index'])->name('blog.index');
 Route::get('/{blog:slug}', [BlogController::class ,'show'])->name('blog.show');
 
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+
+
+Route::group(['middleware' => ['auth:sanctum'], 'prefix' => 'wp-admin' ], function () {
+
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+
+
+    Route::get('/listing', function () {
+        return view('listing.index');
+    });
+    
+
+});
