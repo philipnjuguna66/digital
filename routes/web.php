@@ -49,6 +49,6 @@ Route::group(['middleware' => ['auth:sanctum'], 'prefix' => 'wp-admin' ], functi
     Route::get('/listing', function () {
         return view('listing.index');
     });
-    
+
 
 });
