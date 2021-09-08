@@ -23,6 +23,7 @@ use Modules\Blog\Http\Controllers\CreateBlogController;
 
 Route::prefix('wp-admin/blog')->group(function() {
     Route::get('/', [CreateBlogController::class,'index'])->name('manage.blog.index');
+    Route::get('/create', [CreateBlogController::class,'create'])->name('manage.blog.create');
     Route::get('/edit/{blog}', [CreateBlogController::class,'edit'])->name('manage.blog.edit');
     Route::get('/show/{blog}', [CreateBlogController::class,'show'])->name('manage.blog.show');
 
