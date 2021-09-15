@@ -72,5 +72,7 @@
 
     gtag('config', 'UA-201419497-1');
 </script>
+
+@stack('scripts')
 </body>
 </html>
