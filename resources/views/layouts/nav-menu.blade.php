@@ -28,6 +28,10 @@
                 <a href="{{route ('blog.index')}}" class="text-base font-medium text-gray-500 hover:text-gray-900">
                     Home
                 </a>
+
+                <a href="{{route ('livescore')}}" class="text-base font-medium text-gray-500 hover:text-gray-900">
+                    Livescore
+                </a>
                {{--
                 <x-nav-drop-down title="Services">
                     @foreach(\App\Models\Service::all() as $service)

@@ -31,6 +31,9 @@ Route::get('/sitemap.xml', function (){
 Route::get('/privacy-policy', function (){
     return view('privacy-policy');
 });
+Route::get('/live-score', function (){
+    return view('livescore');
+})->name('livescore');
 
 
 Route::get('/', [BlogController::class ,'index'])->name('blog.index');
