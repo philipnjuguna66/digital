@@ -3,9 +3,15 @@
     @push('styles')
     <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/main-style.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/widgetLiveScore.css') }}">
         <link rel="stylesheet" href="{{ asset('css/widgetCountries.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/widgetLeague.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/widgetLeagueInfo.css') }}">
         <script src="{{ asset('js/jquery.js') }}" ></script>
         <script src="{{ asset('js/jqueryGlobals.js') }}" ></script>
+        <script src="{{ asset('js/jquery.widgetLeague.js') }}" ></script>
+        <script src="{{ asset('js/jquery.widgetLiveScore.js') }}" ></script>
+        <script src="{{ asset('js/jquery.widgetMatchResults.js') }}" ></script>
         <script src="{{ asset('js/jquery.widgetCountries.js') }}"  type="text/javascript"></script>
 
     @endpush
