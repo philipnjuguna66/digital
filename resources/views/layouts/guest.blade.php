@@ -25,6 +25,8 @@
             src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
     </script>
     @livewireStyles
+    @stack('styles')
+
 </head>
 <body class="bg-white">
 <div class="font-sans text-gray-900 antialiased">
