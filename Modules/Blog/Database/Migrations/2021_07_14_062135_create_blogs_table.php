@@ -27,6 +27,7 @@ class CreateBlogsTable extends Migration
                 ->nullable()
                 ->constrained('users')->cascadeOnUpdate()->cascadeOnDelete();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

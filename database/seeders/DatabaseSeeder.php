@@ -2,6 +2,8 @@
 
 namespace Database\Seeders;
 
+use App\Models\Blog;
+use App\Models\Setting;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -13,9 +15,13 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        \App\Models\User::factory()->create([
+        $suser = \App\Models\User::factory()->create([
             'email' => 'admin@philip.com',
             'password' => bcrypt('password')
         ]);
+
+        Blog::factory(100)->create();
+        Setting::factory(4)->create();
+
     }
 }

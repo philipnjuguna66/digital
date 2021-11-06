@@ -22,7 +22,7 @@ use Spatie\Sitemap\SitemapGenerator;
 
 Route::get('/sitemap.xml', function (){
 
-    return SitemapGenerator::create(url('/'))->getSitemap()->writeToDisk('public', 'sitemap.xml');
+    return SitemapGenerator::create("https://digitalmarketingkenya.com")->getSitemap()->writeToDisk('public', 'sitemap.xml');
 
 
 });
