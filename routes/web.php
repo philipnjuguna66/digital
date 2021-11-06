@@ -26,9 +26,14 @@ Route::get('/sitemap.xml', function (){
 
 
 });
+
+
+
+
+
 Route::group(['middleware' => ['auth:sanctum'], 'prefix' => 'wp-admin' ], function () {
 
-    Route::get('/', function () {
+    Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
 

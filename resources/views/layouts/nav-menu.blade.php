@@ -25,13 +25,6 @@
                 </button>
             </div>
             <nav class="hidden md:flex space-x-10">
-                <a href="{{route ('blog.index')}}" class="text-base font-medium text-gray-500 hover:text-gray-900">
-                    Home
-                </a>
-
-                <a href="{{route ('livescore')}}" class="text-base font-medium text-gray-500 hover:text-gray-900">
-                    Livescore
-                </a>
                {{--
                 <x-nav-drop-down title="Services">
                     @foreach(\App\Models\Service::all() as $service)
@@ -45,9 +38,7 @@
                 </x-nav-drop-down>--}}
 
 
-                </a> <a href="{{route('blog.index')}}" class="text-base font-medium text-gray-500 hover:text-gray-900">
-                    Blogs
-                </a>
+
             </nav>
            {{-- <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
                 <a href="{{ route('frequent') }}"
@@ -93,9 +84,7 @@
                 </div>
                 <div class="mt-6">
                     <nav class="grid gap-y-8">
-                        <a href="{{route ('blog.index')}}" class="text-base font-medium text-gray-500 hover:text-gray-900">
-                            Home
-                        </a>
+
 
                       {{--
                         </x-nav-drop-down>
@@ -116,9 +105,7 @@
                             </a>
                         </div>--}}
 
-                        <a href="{{route('blog.index')}}" class="text-base font-medium text-gray-500 hover:text-gray-900">
-                            Blogs
-                        </a>
+                        
                        {{-- <a href="{{ route('frequent') }}"
                            class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
                             FAQ
