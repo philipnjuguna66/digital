@@ -39,7 +39,12 @@ Route::group(['middleware' => ['auth:sanctum'], 'prefix' => 'wp-admin' ], functi
 
 
     Route::get('/listing', function () {
-        return view('listing.index');
+
+        foreach (Blog::all() as $blog) {
+            $blog->slug = Str::of($blog->title)->slug('-');
+            $blog->saveQuietly();
+        }
+
     });
 
 
