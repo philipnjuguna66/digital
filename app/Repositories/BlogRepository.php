@@ -17,7 +17,11 @@ class BlogRepository extends BaseRepository
      * @var array
      */
     protected $fieldSearchable = [
-        
+
+        'slug',
+        'id',
+        'title',
+        'meta_title'
     ];
 
     /**
