@@ -103,7 +103,8 @@ abstract class BaseRepository
             $query->limit($limit);
         }
 
-        return $query;
+
+        return $query->orderBy('id', 'desc');
     }
 
     /**
