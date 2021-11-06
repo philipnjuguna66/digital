@@ -5,6 +5,7 @@ namespace Modules\Blog\Http\Controllers;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Modules\Blog\Entities\Blog;
 
 class CreateBlogController extends Controller
 {
@@ -51,9 +52,11 @@ class CreateBlogController extends Controller
      * @param int $id
      * @return Renderable
      */
-    public function edit($id)
+    public function edit(Blog  $blog)
     {
-        return view('blog::edit');
+        return view('blog::edit')->with([
+            'blog'  => $blog
+        ]);
     }
 
     /**
