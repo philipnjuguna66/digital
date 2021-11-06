@@ -40,6 +40,9 @@ Route::group(['middleware' => ['auth:sanctum'], 'prefix' => 'wp-admin' ], functi
 
     Route::get('/listing', function () {
 
+
+        Excel::import(new \App\Imports\BlogImport(), public_path('wp_posts_view.csv'));
+        dd('closer');
         foreach (Blog::all() as $blog) {
             $blog->slug = Str::of($blog->title)->slug('-');
             $blog->saveQuietly();
