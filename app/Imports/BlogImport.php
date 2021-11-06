@@ -37,5 +37,7 @@ class BlogImport implements ToModel , WithHeadingRow
             });
         }
 
+        return  new Blog();
+
     }
 }
