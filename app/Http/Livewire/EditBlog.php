@@ -45,7 +45,6 @@ class EditBlog extends Component
             'content' => $blog->content,
             'is_published' => $blog->is_published,
             'slug' => Str::slug(Str::limit($blog->seo_slug, 60, ''), '-'),
-            'featured_image' => $blog,
             'published_at' => isset($blog->is_published) ? now() : null
 
         ]);
