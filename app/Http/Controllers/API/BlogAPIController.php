@@ -41,7 +41,7 @@ class BlogAPIController extends AppBaseController
             $request->get('limit')
         );
 
-        return $this->sendResponse(BlogResource::collection($blogs->take(1)), 'Blogs retrieved successfully');
+        return $this->sendResponse(BlogResource::collection($blogs), 'Blogs retrieved successfully');
     }
 
     /**

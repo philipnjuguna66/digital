@@ -24,7 +24,8 @@ class BlogResource extends JsonResource
             'featured_image' => \Storage::url($this->featured_image),
             'is_published' => $this->is_published,
             'created_at' => $this->created_at,
-            'updated_at' => $this->updated_at
+            'updated_at' => $this->updated_at,
+
         ];
     }
 }
