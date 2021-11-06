@@ -2,8 +2,9 @@
 
 
 
-            <livewire:create-blog />
+    @section('content')
+        <livewire:create-blog />
 
-
+    @endsection
 
 </x-app-layout>

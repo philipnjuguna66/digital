@@ -1,7 +1,9 @@
 <x-app-layout>
     @section('title','Create a new post')
 
- <livewire:list-blogs/>
+@section('content')
+        <livewire:list-blogs/>
+    @endsection
 
 
 </x-app-layout>
