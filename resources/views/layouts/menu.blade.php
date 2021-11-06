@@ -9,13 +9,13 @@
     </a>
     <ul class="nav nav-treeview">
         <li class="nav-item">
-            <a href="{{ route('blog.index') }}" class="nav-link">
+            <a href="{{ route('manage.blog.index') }}" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>All Blogs</p>
             </a>
         </li>
         <li class="nav-item">
-            <a href="{{ route('blogs.create') }}" class="nav-link">
+            <a href="{{ route('manage.blog.create') }}" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Add Blog</p>
             </a>
