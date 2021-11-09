@@ -63,8 +63,6 @@
                                             </p>
 
                                             @if($loop->iteration == 4)
-                                                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8438942375783163"
-                                                        crossorigin="anonymous"></script>
                                                 <ins class="adsbygoogle"
                                                      style="display:block; text-align:center;"
                                                      data-ad-layout="in-article"
