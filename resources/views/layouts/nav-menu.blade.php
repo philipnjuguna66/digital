@@ -4,7 +4,7 @@
 
         <!-- start top search -->
         <div class="top-search bg-primary">
-            <div class="container">
+            {{--<div class="container">
                 <form class="search-form" action="search.html" method="GET" accept-charset="utf-8">
                     <div class="input-group">
                                 <span class="input-group-addon cursor-pointer">
@@ -14,7 +14,7 @@
                         <span class="input-group-addon close-search mt-1"><i class="fas fa-times"></i></span>
                     </div>
                 </form>
-            </div>
+            </div>--}}
         </div>
         <!-- end top search -->
         <div class="container">
@@ -25,7 +25,7 @@
 
                             <div class="navbar-header navbar-header-custom">
                                 <!-- start logo -->
-                                <a href="{{ route('home') }}" class="navbar-brand"><img id="logo" src="img/logos/logo-inner.png" alt="logo"></a>
+                                <a href="{{ route('home') }}" class="navbar-brand"><img id="logo" src="{{ asset('img/logos/logo-inner.png') }}" alt="logo"></a>
                                 <!-- end logo -->
                             </div>
 
@@ -51,11 +51,11 @@
                             <!-- end menu area -->
 
                             <!-- start attribute navigation -->
-                            <div class="attr-nav">
+                            {{--<div class="attr-nav">
                                 <ul>
                                     <li class="search"><a href="#!"><i class="fas fa-search"></i></a></li>
                                 </ul>
-                            </div>
+                            </div>--}}
                             <!-- end attribute navigation -->
 
                         </nav>
