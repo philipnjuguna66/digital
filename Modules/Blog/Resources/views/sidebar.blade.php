@@ -23,7 +23,18 @@
 
     <div class="widget">
 
-
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8438942375783163"
+                crossorigin="anonymous"></script>
+        <!-- Blogsidebar -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-8438942375783163"
+             data-ad-slot="3485857471"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
     </div>
     <div class="widget">
         <h6 class="widget-title">Popular Posts</h6>
@@ -62,5 +73,19 @@
             <li><a href="#!">Optimize</a></li>
             <li><a href="#!">Agency</a></li>
         </ul>
+    </div>
+
+    <div class="widget">
+
+        <!-- Blogsidebar -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-8438942375783163"
+             data-ad-slot="3485857471"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
     </div>
 </div>
