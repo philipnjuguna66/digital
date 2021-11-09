@@ -86,8 +86,8 @@
             </div>
         </div>
     </div>
-    <img src="img/bg/bg-09.png" class="position-absolute top-0 start-0" alt="...">
-    <img src="img/bg/bg-02.png" class="position-absolute bottom-0 end-0" alt="...">
+    <img src="{{ asset('img/bg/bg-09.png') }}" class="position-absolute top-0 start-0" alt="...">
+    <img src="{{ asset('img/bg/bg-02.png') }}" class="position-absolute bottom-0 end-0" alt="...">
     <div class="home_bubble">
         <div class="square-shape2"></div>
         <div class="bubble b_three"></div>
