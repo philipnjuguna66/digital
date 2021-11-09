@@ -7,9 +7,6 @@
         @og('description','The Digital Marketing Kenya will improve your website’s organic rankings using proven, white-hat SEO tactics. We help you grow your business online. Call for a Free Quote!')
         @twitter('title','SEO Nairobi • Local, Nairobi SEO Company & Nairobi web Design')
         @twitter('description','The Digital Marketing Kenya will improve your website’s organic rankings using proven, white-hat SEO tactics. We help you grow your business online. Call for a Free Quote!')
-
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8438942375783163"
-                crossorigin="anonymous"></script>
     @endsection
     <div class="main-banner bg-primary top-position position-relative">
         <div class="container">
@@ -249,7 +246,8 @@
                         <div class="align-items-top d-inline-flex text-start shadow py-3 px-4 rounded-lg bg-white">
 
                             <div class="ms-3 font-weight-500">
-
+                                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8438942375783163"
+                                        crossorigin="anonymous"></script>
                                 <!-- Display Ads -->
                                 <ins class="adsbygoogle"
                                      style="display:block"
