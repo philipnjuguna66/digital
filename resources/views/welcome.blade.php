@@ -10,7 +10,6 @@
 
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8438942375783163"
                 crossorigin="anonymous"></script>
-
     @endsection
     <div class="main-banner bg-primary top-position position-relative">
         <div class="container">
@@ -251,6 +250,16 @@
 
                             <div class="ms-3 font-weight-500">
 
+                                <!-- Display Ads -->
+                                <ins class="adsbygoogle"
+                                     style="display:block"
+                                     data-ad-client="ca-pub-8438942375783163"
+                                     data-ad-slot="6377075317"
+                                     data-ad-format="auto"
+                                     data-full-width-responsive="false"></ins>
+                                <script>
+                                    (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
                             </div>
                         </div>
                     </div>
