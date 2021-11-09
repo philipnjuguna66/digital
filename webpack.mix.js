@@ -20,3 +20,23 @@ mix.js('resources/js/app.js', 'public/js')
 if (mix.inProduction()) {
     mix.version();
 }
+
+rules: [
+    {
+        test: /\.scss$/,
+        use: [
+            {
+                loader: 'css-loader',
+                options: {
+                    sourceMap: true
+                }
+            },
+            {
+                loader: 'resolve-url-loader'
+            },
+            {
+                loader: 'sass-loader'
+            }
+        ]
+    }
+]

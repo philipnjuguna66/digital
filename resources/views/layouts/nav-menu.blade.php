@@ -1,120 +1,68 @@
-<div class="relative bg-white shadow bg-local">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
-        <div class="flex justify-between items-center py-2 md:justify-start md:space-x-10">
-            <div class="flex justify-start lg:w-0 lg:flex-1">
-                <div class="flex px-2 lg:px-0">
-                    <div class="flex-shrink-0 flex items-center">
-                        <a href="/">
-                            <x-jet-application-logo class="block lg:hidden h-10 w-auto"/>
-                            <x-jet-application-logo class="hidden lg:block h-14 w-auto"/>
-                        </a>
+<header class="header-style1 menu_area-light">
 
+    <div class="navbar-default">
+
+        <!-- start top search -->
+        <div class="top-search bg-primary">
+            <div class="container">
+                <form class="search-form" action="search.html" method="GET" accept-charset="utf-8">
+                    <div class="input-group">
+                                <span class="input-group-addon cursor-pointer">
+                                    <button class="search-form_submit fas fa-search text-white" type="submit"></button>
+                                </span>
+                        <input type="text" class="search-form_input form-control" name="s" autocomplete="off" placeholder="Type & hit enter...">
+                        <span class="input-group-addon close-search mt-1"><i class="fas fa-times"></i></span>
                     </div>
-                </div>
+                </form>
             </div>
-            <div class="-mr-2 -my-2 md:hidden">
-                <button @click="mobile=true" type="button"
-                        class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-                        aria-expanded="false">
-                    <span class="sr-only">Open menu</span>
-                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                         stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                              d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
-                </button>
-            </div>
-            <nav class="hidden md:flex space-x-10">
-               {{--
-                <x-nav-drop-down title="Services">
-                    @foreach(\App\Models\Service::all() as $service)
-                        <x-nav-link url="{{route('show.service',$service->slug)}}" icon="{{ $service->icon }}"
-                                    title="{{$service->title}}"
-                                    Summary="{{\Illuminate\Support\Str::limit($service->summary,20)}}"></x-nav-link>
-                    @endforeach
-                    <x-slot name="flow">
-
-                    </x-slot>
-                </x-nav-drop-down>--}}
-
-
-
-            </nav>
-           {{-- <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-                <a href="{{ route('frequent') }}"
-                   class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
-                    FAQ
-                </a>
-                <a href="{{ route('contact.us') }}"
-                   class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
-                    Contact Us
-                </a>
-            </div>--}}
         </div>
-    </div>
+        <!-- end top search -->
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-12">
+                    <div class="menu_area">
+                        <nav class="navbar navbar-expand-lg navbar-light p-0">
 
-    <div class="absolute top-0 inset-x-0 z-10 p-2 transition transform origin-top-right md:hidden"
-         x-show="mobile"
-         x-transition:enter="duration-200 ease-out"
-         x-transition:enter-start="opacity-0 scale-95"
-         x-transition:enter-end="opacity-100 scale-100"
-         x-transition:leave="duration-100 ease-in"
-         x-transition:leave-start="opacity-100 scale-100"
-         x-transition:leave-end="opacity-0 scale-95"
-    >
-        <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
-            <div class="pt-5 pb-6 px-5">
-                <div class="flex items-center justify-between">
-                    <a href="/">
-                        <x-jet-application-logo class="block lg:hidden h-10 w-auto"/>
+                            <div class="navbar-header navbar-header-custom">
+                                <!-- start logo -->
+                                <a href="{{ route('home') }}" class="navbar-brand"><img id="logo" src="img/logos/logo-inner.png" alt="logo"></a>
+                                <!-- end logo -->
+                            </div>
 
-                    </a>
-                    <div class="-mr-2">
-                        <button @click="mobile = false" type="button"
-                                class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
-                            <span class="sr-only">Close menu</span>
-                            <!-- Heroicon name: outline/x -->
-                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                 viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                      d="M6 18L18 6M6 6l12 12"/>
-                            </svg>
-                        </button>
+                            <div class="navbar-toggler"></div>
+
+                            <!-- menu area -->
+                            <ul class="navbar-nav ms-auto" id="nav" style="display: none;">
+                                <li><a href="{{ route('home') }}">Home</a></li>
+                                <li><a href="{{ route('about_us') }}">Home</a></li>
+
+                                <li><a href="#!">Services</a>
+                                    <ul>
+                                        <li><a href="{{ route('seo_optimization') }}">SEO Optimization</a></li>
+                                        <li><a href="{{ route('seo_marketing') }}">SEO Marketing</a></li>
+                                        <li><a href="{{ route('web_design') }}">Web Design</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="{{ route('blog') }}">Home</a></li>
+
+                                <li><a href="{{ route('contact_us') }}">Contacts</a></li>
+                            </ul>
+                            <!-- end menu area -->
+
+                            <!-- start attribute navigation -->
+                            <div class="attr-nav">
+                                <ul>
+                                    <li class="search"><a href="#!"><i class="fas fa-search"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- end attribute navigation -->
+
+                        </nav>
                     </div>
-                </div>
-                <div class="mt-6">
-                    <nav class="grid gap-y-8">
-
-
-                      {{--
-                        </x-nav-drop-down>
-
-                        <x-nav-drop-down title="Services">
-                            @foreach(\App\Models\Service::all() as $service)
-                                <x-nav-link url="{{route('show.service',$service->slug)}}" icon="{{ $service->icon }}"
-                                            title="{{$service->title}}"
-                                            Summary="{{\Illuminate\Support\Str::limit($service->summary,20)}}"></x-nav-link>
-                            @endforeach
-                            <x-slot name="flow">
-
-                            </x-slot>
-                        </x-nav-drop-down>--}}
-                       {{-- <div class="">
-                            <a href="{{route('career')}}" class="text-base font-medium text-gray-500 hover:by-gray-900">
-                                Careers
-                            </a>
-                        </div>--}}
-
-                        
-                       {{-- <a href="{{ route('frequent') }}"
-                           class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
-                            FAQ
-                        </a>--}}
-
-                    </nav>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
+</header>

@@ -28,10 +28,18 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
 
+        $this->customDirectives();
+    }
+
+    private function customDirectives()
+    {
         Blade::directive('og', function ($expression) {
             list($property, $content) = explode(',', $expression, 2);
-            return "<?php echo '<meta property=\"og:' . $property . '\" content=\"' . $content . '\">' . \"\n\"; ?>";
+            return"<?php echo '<meta property=\"og:' . $property . '\" content=\"' . $content . '\">' . \"\n\"; ?>";
         });
-
+        Blade::directive('twitter', function ($expression) {
+            list($property, $content) = explode(',', $expression, 2);
+            return  "<?php echo '<meta property=\"twitter:' . $property . '\" content=\"' . $content . '\">' . \"\n\"; ?>";
+        });
     }
 }

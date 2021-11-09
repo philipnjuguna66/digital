@@ -23,32 +23,58 @@ use Spatie\Sitemap\SitemapGenerator;
 Route::get('/sitemap.xml', function (){
 
     return SitemapGenerator::create("https://digitalmarketingkenya.com")->getSitemap()->writeToDisk('public', 'sitemap.xml');
+});
+
+
+Route::get('/', function () {
+    return view('welcome');
+})->name('home');
+
+
+
+
+Route::get('/about-us', function () {
+    return view('welcome');
+})->name('about_us');
+
+
+
+Route::prefix('services')->group(function (){
+    Route::get('/seo-optimization', function () {
+        return view('welcome');
+    })->name('seo_optimization');
+
+    Route::get('/seo-marketing', function () {
+        return view('welcome');
+    })->name('seo_marketing');
+
+    Route::get('/web-design', function () {
+        return view('welcome');
+    })->name('web_design');
 
 
 });
 
 
 
+Route::get('/blog', function () {
+    return view('welcome');
+})->name('blog');
 
 
-Route::group(['middleware' => ['auth:sanctum'], 'prefix' => 'wp-admin' ], function () {
-
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
+Route::get('/contact-us', function () {
+    return view('welcome');
+})->name('contact_us');
 
 
-    Route::get('/listing', function () {
+
+Route::get('/privacy', function () {
+    return view('welcome');
+})->name('privacy');
 
 
-        Excel::import(new \App\Imports\BlogImport(), public_path('wp_posts_view.csv'));
-        dd('closer');
-        foreach (Blog::all() as $blog) {
-            $blog->slug = Str::of($blog->title)->slug('-');
-            $blog->saveQuietly();
-        }
-
-    });
+Route::get('/terms-and-condition', function () {
+    return view('welcome');
+})->name('terms-and-conditions');
 
 
-});
