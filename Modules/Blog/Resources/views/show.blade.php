@@ -3,11 +3,15 @@
     @section('description', Str::of($blog->meta_description))
 
     @section('metas')
-        @og('title','SEO Nairobi • Local, Nairobi SEO Company & Nairobi web Design')
-        @og('description','The Digital Marketing Kenya will improve your website’s organic rankings using proven, white-hat SEO tactics. We help you grow your business online. Call for a Free Quote!')
-        @twitter('title','SEO Nairobi • Local, Nairobi SEO Company & Nairobi web Design')
-        @twitter('description','The Digital Marketing Kenya will improve your website’s organic rankings using proven, white-hat SEO tactics. We help you grow your business online. Call for a Free Quote!')
-    @endsection
+        @og('site_name', "Digital Marketing, SEO and Web Design in Kenya")
+        @og('description', $blog->meta_description)
+        @og('image',  is_null($blog->featured_image) ? asset('images/blog-04.jpeg') :  Storage::url($blog->featured_image))
+        @twitter('site_name', "Digital Marketing, SEO and Web Design in Kenya")
+        @twitter('title',$blog->title)
+        @twitter('description', $blog->meta_description)
+        @twitter('image',  is_null($blog->featured_image) ? asset('images/blog-04.jpeg') :  Storage::url($blog->featured_image))
+
+         @endsection
     <!-- PAGE TITLE
         ================================================== -->
         <section class="page-title-section top-position bg-primary">
@@ -25,8 +29,8 @@
                     </div>
                 </div>
             </div>
-            <img src="img/banner/page-title2.png" class="position-absolute top-0 start-0" alt="...">
-            <img src="img/banner/page-title1.png" class="position-absolute bottom-0 end-0" alt="...">
+            <img src="{{ asset('img/banner/page-title2.png') }}" class="position-absolute top-0 start-0" alt="...">
+            <img src="{{ asset('img/banner/page-title1.png') }}" class="position-absolute bottom-0 end-0" alt="...">
             <div class="home_bubble">
                 <div class="square-shape2"></div>
                 <div class="bubble b_three"></div>
