@@ -26,17 +26,11 @@ Route::get('/sitemap.xml', function (){
 });
 
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');
-
-
-
+Route::get('/', [\App\Http\Controllers\HomeController::class,'index'])->name('home');
 
 Route::get('/about-us', function () {
     return view('welcome');
 })->name('about_us');
-
 
 
 Route::prefix('services')->group(function (){
@@ -55,11 +49,22 @@ Route::prefix('services')->group(function (){
 
 });
 
+Route::prefix('blog')->group(function (){
+
+    Route::get('/', function () {
+        return view('welcome');
+    })->name('blog');
+
+    Route::get('/{blog:slug}', function () {
+        return view('welcome');
+    })->name('blog.show');
 
 
-Route::get('/blog', function () {
-    return view('welcome');
-})->name('blog');
+});
+
+
+
+
 
 
 Route::get('/contact-us', function () {
@@ -76,5 +81,8 @@ Route::get('/privacy', function () {
 Route::get('/terms-and-condition', function () {
     return view('welcome');
 })->name('terms-and-conditions');
+
+
+Route::get('/{blog:slug}', [\App\Http\Controllers\HomeController::class,'notFound']);
 
 
