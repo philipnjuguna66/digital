@@ -62,7 +62,7 @@
                                                 {{ strip_tags($blog->excerpt) }}
                                             </p>
 
-                                            @if($loop->iteration > 3 &&  $loop->even)
+                                            @if($loop->iteration > 3 &&  $loop->even + 3)
                                                 <ins class="adsbygoogle"
                                                      style="display:block; text-align:center;"
                                                      data-ad-layout="in-article"
