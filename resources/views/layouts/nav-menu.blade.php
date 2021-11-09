@@ -25,7 +25,8 @@
 
                             <div class="navbar-header navbar-header-custom">
                                 <!-- start logo -->
-                                <a href="{{ route('home') }}" class="navbar-brand"><img id="logo" src="{{ asset('img/logos/logo-inner.png') }}" alt="logo"></a>
+                                <a href="{{ route('home') }}" class="navbar-brand">
+                                    <img id="logo" src="{{ asset('img/logos/logo-inner.png') }}" alt="logo"></a>
                                 <!-- end logo -->
                             </div>
 

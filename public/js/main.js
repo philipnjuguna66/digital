@@ -8,7 +8,7 @@
     /* ----------------------------------
 
     JS Active Code Index
-            
+
         01. Preloader
         02. Sticky Header
         03. Scroll To Top
@@ -23,8 +23,8 @@
         12. CountUp
         13. Countdown
         14. Gallery
-        
-    ---------------------------------- */    
+
+    ---------------------------------- */
 
 (function($) {
 
@@ -49,11 +49,11 @@
             var logochange = $(".navbar-brand img");
             if (scroll <= 50) {
                 $("header").removeClass("scrollHeader").addClass("fixedHeader");
-                logochange.attr('src', 'img/logos/logo-inner.png');
-            } 
+                logochange.attr('src', '/img/logos/logo-inner.png');
+            }
             else {
                 $("header").removeClass("fixedHeader").addClass("scrollHeader");
-                logochange.attr('src', 'img/logos/logo.png');
+                logochange.attr('src', '/img/logos/logo.png');
             }
         });
 
@@ -89,7 +89,7 @@
                 $(this).css("background-image", "url(" + $(this).data("background") + ")");
             }
         });
-        
+
         /*------------------------------------
             05. Video
         --------------------------------------*/
@@ -117,7 +117,7 @@
         /*------------------------------------
             07. Wow animation - on scroll
         --------------------------------------*/
-        
+
         var wow = new WOW({
             boxClass: 'wow', // default
             animateClass: 'animated', // default
@@ -150,7 +150,7 @@
 
         /*------------------------------------
             10. FullScreenHeight and screenHeight with resize function
-        --------------------------------------*/        
+        --------------------------------------*/
 
         function SetResizeContent() {
             fullScreenHeight();
@@ -191,13 +191,13 @@
 
             }
         });
-    
+
         // portfolio-single carousel
         $('.portfolio-single').owlCarousel({
             loop: true,
             responsiveClass: true,
             autoplay: true,
-            smartSpeed: 800,            
+            smartSpeed: 800,
             nav: false,
             dots: true,
             center: false,
@@ -241,7 +241,7 @@
                 },
             }
         });
-        
+
         // Default owlCarousel
         $('.owl-carousel').owlCarousel({
             items: 1,
@@ -250,7 +250,7 @@
             margin: 0,
             autoplay:true,
             smartSpeed:500
-        });   
+        });
 
         /*------------------------------------
             12. CountUp
@@ -270,7 +270,7 @@
             date: "01 Jan 2024 00:01:00", //set your date and time. EX: 15 May 2014 12:00:00
             format: "on"
         });
-      
+
     });
 
     // === when window loading === //
