@@ -1,12 +1,9 @@
 <?php
 
-use Carbon\Carbon;
-use Illuminate\Database\Eloquent\Model;
+
+use App\Http\Controllers\BlogController;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Str;
-use Maatwebsite\Excel\Facades\Excel;
-use Modules\Blog\Entities\Blog;
-use Modules\Blog\Http\Controllers\BlogController;
+
 use Spatie\Sitemap\SitemapGenerator;
 
 /*
@@ -51,13 +48,9 @@ Route::prefix('services')->group(function (){
 
 Route::prefix('blog')->group(function (){
 
-    Route::get('/', function () {
-        return view('welcome');
-    })->name('blog');
 
-    Route::get('/{blog:slug}', function () {
-        return view('welcome');
-    })->name('blog.show');
+    Route::get('/', [BlogController::class,'index'])->name('blog');
+    Route::get('/{blog:slug}', [BlogController::class,'show'])->name('blog.show');
 
 
 });

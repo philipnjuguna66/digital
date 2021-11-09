@@ -12,21 +12,21 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
  * @version November 6, 2021, 6:39 am UTC
  *
  */
-class Blog extends Model
+class Blog extends \Modules\Blog\Entities\Blog
 {
     use SoftDeletes;
 
     use HasFactory;
 
     public $table = 'blogs';
-    
+
 
     protected $dates = ['deleted_at'];
 
 
 
     public $fillable = [
-        
+
     ];
 
     /**
@@ -35,7 +35,7 @@ class Blog extends Model
      * @var array
      */
     protected $casts = [
-        
+
     ];
 
     /**
@@ -44,8 +44,8 @@ class Blog extends Model
      * @var array
      */
     public static $rules = [
-        
+
     ];
 
-    
+
 }

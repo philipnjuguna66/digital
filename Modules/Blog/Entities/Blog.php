@@ -4,6 +4,8 @@ namespace Modules\Blog\Entities;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 class Blog extends Model
 {
@@ -26,5 +28,17 @@ class Blog extends Model
     public function scopePublished($query)
     {
         return $query->where('is_published', true);
+    }
+
+    public function getExcerptAttribute($value)
+    {
+        return $this->attributes['excerpt'] = Str::limit($this->content, 300 , ' ');
+    }
+    public function getFeaturedImageAttribute($value)
+    {
+        $image = asset('images/blog-0'.random_int(1,2).'.jpeg');
+
+
+        return $this->attributes['featured_image'] = is_null($value) ? $image :  Storage::url($value);
     }
 }

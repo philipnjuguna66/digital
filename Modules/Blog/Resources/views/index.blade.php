@@ -1,64 +1,86 @@
-    <x-guest-layout>
-    @section('title','Tech survyes')
+<x-app-layout>
+    @section('title','SEO Nairobi, Nairobi SEO Marketing and Branding Company & Nairobi web Design')
+    @section('description','The Digital Marketing Kenya will improve your website’s organic rankings using proven, white-hat SEO tactics. We help you grow your business online. Call for a Free Quote!')
 
-    <!-- This example requires Tailwind CSS v2.0+ -->
-        <!-- This example requires Tailwind CSS v2.0+ -->
-        <!-- This example requires Tailwind CSS v2.0+ -->
-        <div class="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
-            <div class="absolute inset-0">
-                <div class="bg-white h-1/3 sm:h-2/3"></div>
-            </div>
-            <div class="relative max-w-7xl mx-auto">
-                <div class="text-center">
-                    <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
-                        From the blog
-                    </h2>
+    @section('metas')
+        @og('title','SEO Nairobi • Local, Nairobi SEO Company & Nairobi web Design')
+        @og('description','The Digital Marketing Kenya will improve your website’s organic rankings using proven, white-hat SEO tactics. We help you grow your business online. Call for a Free Quote!')
+        @twitter('title','SEO Nairobi • Local, Nairobi SEO Company & Nairobi web Design')
+        @twitter('description','The Digital Marketing Kenya will improve your website’s organic rankings using proven, white-hat SEO tactics. We help you grow your business online. Call for a Free Quote!')
+    @endsection
 
+
+    <!-- PAGE TITLE
+        ================================================== -->
+        <section class="page-title-section top-position bg-primary">
+            <div class="container z-index-1 position-relative">
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <h1>Blog List</h1>
+                    </div>
+                    <div class="col-md-12">
+                        <ul class="mb-0 ps-0">
+                            <li><a href="{{ url('/')  }}">Home</a></li>
+                            <li><a class="dot-divider"></a></li>
+                            <li><a href="#!">Blog List</a></li>
+                        </ul>
+                    </div>
                 </div>
+            </div>
+            <img src="{{ asset('img/banner/page-title2.png') }}" class="position-absolute top-0 start-0" alt="...">
+            <img src="{{ asset('img/banner/page-title1.png') }}" class="position-absolute bottom-0 end-0" alt="...">
+            <div class="home_bubble">
+                <div class="square-shape2"></div>
+                <div class="bubble b_three"></div>
+                <div class="square-shape1 d-none d-sm-block"></div>
+                <div class="bubble b_six d-none d-sm-block"></div>
+            </div>
+        </section>
 
-                <div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+        <!-- BLOG LIST
+        ================================================== -->
+        <section class="blog-list">
+            <div class="container">
+                <div class="row">
+                    <!-- blog left -->
+                    <div class="col-lg-8 col-md-12 mb-6 mb-lg-0">
+                        <div class="row">
 
-                    @foreach($blogs as $blog)
-                        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-                            {{-- <div class="flex-shrink-0">
-                                 <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80" alt="">
-                             </div>--}}
-                            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
-                                <div class="flex-1">
-                                    <p class="text-sm font-medium text-indigo-600">
-                                        <a href="{{ route('blog.show', $blog) }}" class="hover:underline">
-                                            Article
-                                        </a>
-                                    </p>
-                                    <a href="{{ route('blog.show', $blog) }}" class="block mt-2">
-                                        <p class="text-xl font-semibold text-gray-900">
-                                            {{ \Illuminate\Support\Str::title(\Illuminate\Support\Str::ucfirst(strtolower($blog->title )))}}
-                                        </p>
-                                        <p class="mt-3 text-base text-gray-500">
-                                            {{ \Illuminate\Support\Str::lower(strip_tags(\Illuminate\Support\Str::limit($blog->content, 200 , '...')) )}}
-                                        </p>
-                                    </a>
+                            @foreach($blogs as $blog)
+                                <div class="col-lg-12 mb-1-6 mb-md-1-9">
+                                    <article class="card card-style2 border-none">
+                                        <div class="card-img">
+                                            <img src="{{ $blog->featured_image}}" alt="{{ $blog->title }}">
+                                        </div>
+                                        <div class="blog-info-tag">
+                                            <div class="text-end"><a href="#!" class="bg-light-pink">Optimization</a></div>
+                                        </div>
+                                        <div class="card-body">
+                                            <small class="font-weight-500">05 Feb. 2021</small>
+                                            <h3 class="h4 mt-2 mb-3"><a href="{{ route('blog.show' , ['blog' => $blog->slug]) }}">{{ $blog->title }}</a></h3>
+                                            <p class="mb-3">
+                                                {{ strip_tags($blog->excerpt) }}
+                                            </p>
+
+                                        </div>
+                                    </article>
                                 </div>
+                            @endforeach
+                            {!! $blogs->links()  !!}
 
-                            </div>
                         </div>
-                    @endforeach
 
+                    </div>
+                    <!-- end blog left -->
 
-
-
-                </div>
-
-
-                <div class="text-center">
-                    <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
-                        <nav class="relative z-0 inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination">
-                            {!! $blogs->links() !!}
-                        </nav>
-                    </h2>
-
+                    <!-- blog right -->
+                    <div class="col-lg-4 col-md-12">
+                        <div class="ps-lg-1-6 ps-xl-1-9">
+                           @include('blog::sidebar')
+                        </div>
+                    </div>
+                    <!-- end blog right -->
                 </div>
             </div>
-        </div>
-
-    </x-guest-layout>
+        </section>
+</x-app-layout>

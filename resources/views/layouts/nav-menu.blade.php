@@ -34,7 +34,7 @@
                             <!-- menu area -->
                             <ul class="navbar-nav ms-auto" id="nav" style="display: none;">
                                 <li><a href="{{ route('home') }}">Home</a></li>
-                                <li><a href="{{ route('about_us') }}">Home</a></li>
+                                <li><a href="{{ route('about_us') }}">About Us</a></li>
 
                                 <li><a href="#!">Services</a>
                                     <ul>
@@ -44,7 +44,7 @@
                                     </ul>
                                 </li>
 
-                                <li><a href="{{ route('blog') }}">Home</a></li>
+                                <li><a href="{{ route('blog') }}">Blog</a></li>
 
                                 <li><a href="{{ route('contact_us') }}">Contacts</a></li>
                             </ul>
