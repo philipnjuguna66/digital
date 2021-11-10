@@ -100,7 +100,6 @@ class EditBlog extends Component
 
         try {
 
-
             $this->blog->updateQuietly([
                 'title' => $this->title,
                 'meta_title' => $this->meta_title,
