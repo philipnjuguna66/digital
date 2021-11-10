@@ -23,6 +23,7 @@
         "tailwindcss-aspect-ratio": "^3.0.0"
     },
     "dependencies": {
+        "@ckeditor/ckeditor5-source-editing": "^31.0.0",
         "@tailwindcss/aspect-ratio": "^0.2.1"
     }
 }

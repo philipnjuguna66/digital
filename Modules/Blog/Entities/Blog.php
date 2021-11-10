@@ -34,11 +34,12 @@ class Blog extends Model
     {
         return $this->attributes['excerpt'] = Str::limit($this->content, 300 , ' ');
     }
-    public function getFeaturedImageAttribute($value)
+    public function getFeaturedImagePathAttribute($value)
     {
+
         $image = asset('images/blog-0'.random_int(1,2).'.jpeg');
 
 
-        return $this->attributes['featured_image'] = is_null($value) ? $image :  Storage::url($value);
+        return $this->attributes['featured_image_path'] = is_null($this->featured_image) ? $image :  Storage::url($this->featured_image);
     }
 }

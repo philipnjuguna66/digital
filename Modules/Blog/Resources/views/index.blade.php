@@ -50,7 +50,7 @@
                                 <div class="col-lg-12 mb-1-6 mb-md-1-9">
                                     <article class="card card-style2 border-none">
                                         <div class="card-img">
-                                            <img src="{{ $blog->featured_image}}" alt="{{ $blog->title }}">
+                                            <img src="{{ $blog->featured_image_path}}" alt="{{ $blog->title }}">
                                         </div>
                                         <div class="blog-info-tag">
                                             <div class="text-end"><a href="#!" class="bg-light-pink">Optimization</a></div>

@@ -49,7 +49,7 @@
                             <div class="post-content">
                                 <div class="post-meta">
                                     <div class="mb-1-6 mb-md-1-9">
-                                        <img src="{{ $blog->featured_image }}" alt="{{ $blog->title }}">
+                                        <img src="{{ $blog->featured_image_path }}" alt="{{ $blog->title }}">
                                     </div>
                                     <h2 class="h3">{{ $blog->title }}</h2>
                                     <ul class="meta-list ps-0">

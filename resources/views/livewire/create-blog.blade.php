@@ -1,180 +1,175 @@
 <div>
-    <form action="#" method="POST" wire:submit.prevent="submit">
-        <div>
-            <div class="md:grid md:grid-cols-3 md:gap-6">
-                <div class="mt-5 md:mt-0 md:col-span-2">
-
-                    <div class="shadow sm:rounded-md sm:overflow-hidden">
-                        <div class="px-4 py-5 bg-white space-y-6 sm:p-6">
 
 
-                            <div class="col-span-6 sm:col-span-3">
-                                <label for="title" class="block text-sm font-medium text-gray-700">Title</label>
-                                <input type="text"  wire:model.lazy="title" id="title" autocomplete="family-name"
-                                       class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+    <div class="card card-default mt-4 mr-6 bg-gray-400">
+        <div class="card-header">
 
+
+            <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                    <i class="fas fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-tool" data-card-widget="remove">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body">
+
+            <form
+                method="POST"
+                wire:submit.prevent="submit"
+                class="form-horizontal"
+                enctype="multipart/form-data"
+                autocomplete="off">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <label>Title</label>
+                            <input type="text" wire:model.lazy="title" id="title" autocomplete="family-name"
+                                   class="mt-1 form-control focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                            <span class="text-red-600">
+                    @error('title') {{  $message }} @enderror
+                        </span>
+                        </div>
+                        <!-- /.form-group -->
+                        <div class="form-group" wire:ignore >
+                            <label>Content</label>
+                            <div id="editor">
+                                {!! $content !!}
 
                                 <span class="text-red-600">
-                                    @error('title') {{  $message }} @enderror
-                                </span>
-                            </div>
-
-                            <div>
-                                <label for="content" class="block text-sm font-medium text-gray-700">
-                                    Content
-                                </label>
-                                <div class="mt-2 bg-white" wire:ignore>
-                                    <div id="editor">
-                                        {!! $content !!}
-
-                                        <span class="text-red-600">
                                     @error('content') {{  $message }} @enderror
                                 </span>
-                                    </div>
-
-
-
-                                </div>
-
-                            </div>
-
-
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700">
-                                    Cover photo
-                                </label>
-                                <div
-                                    class="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md">
-                                    <div class="space-y-1 text-center">
-
-                                        <div class="flex text-sm text-gray-600">
-                                            <label for="featured_image"
-                                                   class="relative cursor-pointer bg-white rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
-                                                <span>Upload a file</span>
-                                                <input id="featured_image" wire:model.lazy="featured_image" type="file" class="sr-only">
-                                            </label>
-                                            <div>
-                                                 @if ($featured_image)
-                                                    Photo Preview:
-                                                    <img src="{{ $featured_image->temporaryUrl() }}" width="300" height="500">
-                                                @endif
-                                            </div>
-
-                                        </div>
-                                        <p class="text-xs text-gray-500">
-                                            PNG, JPG up to 1MB
-                                        </p>
-
-                                        <span class="text-red-600">
-                                    @error('featured_image') {{  $message }} @enderror
-                                </span>
-                                    </div>
-                                </div>
                             </div>
                         </div>
-                        <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
-                            <button type="submit"
-                                    class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                                Save
-                            </button>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="mt-5 md:mt-0 md:col-span-1">
-
-                    <div class="shadow sm:rounded-md sm:overflow-hidden">
-                        <div class="px-4 py-5 bg-white space-y-6 sm:p-6">
-                            <h3 class="text-lg font-medium leading-6 text-gray-900">SEO SETTINGS</h3>
-                            <div class="col-span-6 sm:col-span-3">
-                                <label for="seo_slug" class="block text-sm font-medium text-gray-700">Slug</label>
-                                <input type="text" wire:model.lazy="seo_slug" id="seo_slug" autocomplete="family-name"
-                                       class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
-
-
-
-                                <span class="text-red-600">
-                                    @error('seo_slug') {{  $message }} @enderror
-                                </span>
-                            </div>
-                            <div class="col-span-6 sm:col-span-3">
-                                <label for="meta_title" class="block text-sm font-medium text-gray-700">SEO TITLE</label>
-                                <input type="text" wire:model.lazy="meta_title" id="meta_title" autocomplete="family-name"
-                                       class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
-
-                                <span class="text-red-600">
-                                    @error('meta_title') {{  $message }} @enderror
-                                </span>
-                            </div>
-
-
-
-                            <div>
-                                <label for="meta_description" class="block text-sm font-medium text-gray-700">
-                                    SEO Description
-                                </label>
-                                <div class="mt-1">
-                                   <textarea id="meta_description" wire:model.lazy="meta_description"rows="3" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md" placeholder="you@example.com"></textarea>
-
-
-                                    <span class="text-red-600">
-                                    @error('meta_description') {{  $message }} @enderror
-                                </span>
-                                </div>
-
-                            </div>
-
-                            <div class="flex items-start">
-                                <div class="flex items-center h-5">
-                                    <input id="is_published"  wire:model="is_published" type="checkbox" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
-
-                                    <span class="text-red-600">
-                                    @error('is_published') {{  $message }} @enderror
-                                </span>
-
-                                </div>
-                                <div class="ml-3 text-sm">
-                                    <label for="is_published" class="font-medium text-gray-700">Is Published</label>
-
-                                </div>
-                            </div>
-
+                        <!-- /.form-group -->
+                        <div class="form-group">
+                            <label></label>
                             <div class="md:col-span-1">
                                 <h3 class="text-lg font-medium leading-6 text-gray-900">SERP Preview</h3>
                                 <div class="mt-1 text-sm text-gray-500">
-                                   <div class="text-blue-700">{{ env('APP_URL'). '/blog/' . $seo_slug  }}</div>
-                                <div class="h1 text-bold"><b>{{ Str::title( Str::limit($meta_title , 60 ,  ' ... '))  }}</b></div>
-                                <p class="text-sm">{{ Str::limit($meta_description , 160 , '...') }}</p>
-                                    {!! $content !!}
+                                    <div class="text-green">{{ env('APP_URL'). '/blog/' . $seo_slug  }}</div>
+                                    <div class="text-bold">
+                                        <b class="text-green">{{ Str::title( Str::limit($title , 60 ,  ' ... '))  }}</b></div>
+                                    <p class="text-sm">{{ Str::limit($meta_description , 160 , '...') }}</p>
+
                                 </div>
                             </div>
-
-
                         </div>
-
+                        <!-- /.form-group -->
                     </div>
+                    <!-- /.col -->
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Slug</label>
+                            <input type="text"
+                                   wire:model.lazy="seo_slug"
+                                   id="seo_slug"
+                                   autocomplete="family-name"
+                                   class="mt-1 form-control focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
 
+
+                            <span class="text-red-600">
+                            @error('seo_slug') {{  $message }} @enderror
+                        </span>
+                        </div>
+                        <!-- /.form-group -->
+                        <div class="form-group">
+                            <label>Meta Title</label>
+
+                            <input type="text" wire:model.lazy="meta_title" id="meta_title" autocomplete="family-name"
+                                   class="mt-1 form-control focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                            @error('meta_title')
+                            <span class="text-red-600">
+                           {{  $message }}
+                                </span>
+                            @enderror
+                        </div>
+                        <!-- /.form-group -->
+                        <div class="form-group">
+                            <label>Meta Description</label>
+
+                            <textarea wire:model.lazy="meta_description" class="quform-textarea form-control"></textarea>
+                            @error('meta_title')
+                            <span class="text-red-600">
+                           {{  $message }}
+                                </span>
+                            @enderror
+                        </div>
+                        <!-- /.form-group -->
+                        <div class="form-group">
+                            <label>Is Published</label>
+
+                            <input type="checkbox" wire:model.lazy="is_published" class="quform-element-checkbox">
+                            @error('meta_title')
+                            <span class="text-red-600">
+                           {{  $message }}
+                                </span>
+                            @enderror
+                        </div>
+                        <!-- /.form-group -->
+                        <div class="form-group">
+                            <label>Featured Image</label>
+
+                            <input id="featured_image" wire:model.lazy="featured_image" type="file"
+                                   class="">
+
+                            <div>
+                                @if ($featured_image_path && ! $featured_image)
+                                    Photo Preview:
+                                    <img src="{{  $featured_image_path }}" width="300"
+                                         height="500">
+                                @elseif($featured_image)
+                                    Photo Preview:
+                                    <img src="{{  $featured_image->temporaryUrl() }}" width="300"
+                                         height="500">
+                                @endif
+                            </div>
+                        </div>
+                        <button type="submit"
+                                class="inline-flex  btn btn-success justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                            Save
+                        </button>
+                        <!-- /.form-group -->
+                    </div>
+                    <!-- /.col -->
                 </div>
-            </div>
+            </form>
+
         </div>
-    </form>
+    </div>
 </div>
 
-@push('scripts')
-    <script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>
+@push('page_scripts')
+    <script src="{{ asset('js/ckeditor.js') }}"></script>
 
     <script>
 
         ClassicEditor
-            .create( document.querySelector( '#editor' ) )
+            .create(document.querySelector('#editor'), {
+                licenseKey: 'HgBZE6lK9xLvaPLEYvc3S3m005Qo5R4aIgeQ7cG1ftTpt4Mp9sTRa9ZK24Y8',
+                sidebar: {
+                    container: document.querySelector('.sidebar')
+                },
+
+
+            })
             .then(editor => {
                 editor.model.document.on('change:data', () => {
                     console.log(editor.getData())
-                    @this.set('content', editor.getData());
+                @this.set('content', editor.getData());
                 })
             })
-            .catch( error => {
-                console.error( error );
-            } );
+            .catch(error => {
+                console.error('Oops, something went wrong!');
+                console.error('Please, report the following error on https://github.com/ckeditor/ckeditor5/issues with the build id and the error stack trace:');
+                console.warn('Build id: fsy8957et48w-nohdljl880ze');
+                console.error(error);
+            });
+
+
     </script>
 @endpush
+

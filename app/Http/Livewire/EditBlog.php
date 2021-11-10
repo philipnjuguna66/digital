@@ -29,6 +29,8 @@ class EditBlog extends Component
 
     public $featured_image;
 
+    public $featured_image_path;
+
 
     public bool $is_published = true;
 
@@ -40,7 +42,8 @@ class EditBlog extends Component
         $this->fill([
             'blog' => $blog,
             'title' => $blog->title,
-            'meta_title' => $blog->meta_description,
+            'meta_title' => $blog->meta_title,
+            'featured_image_path' => $blog->featured_image_path,
             'meta_description' => $blog->meta_description,
             'content' => $blog->content,
             'is_published' => $blog->is_published,
@@ -50,25 +53,13 @@ class EditBlog extends Component
         ]);
     }
 
-    public function updatingSeoSlug()
-    {
-        $this->seo_slug = Str::limit($this->seo_slug, 75, ' ... ');
-        return Str::slug($this->seo_slug, '-');
-    }
 
-    public function updatedMetaTiltle()
-    {
-        return Str::limit($this->meta_title, 60, ' ... ');
-    }
-
-    public function updatedMetaDescription()
-    {
-        return Str::limit($this->meta_description, 160, ' ... ');
-    }
 
     public function render()
     {
-        return view('livewire.create-blog');
+
+        return view('livewire.create-blog')
+            ->extends('blog::layouts.app')->section('content');
     }
 
 
@@ -88,10 +79,6 @@ class EditBlog extends Component
                 'required',
                 Rule::unique('blogs', 'meta_description')->ignore($this->blog->id)
             ],
-            'seo_slug' => [
-                'required',
-                Rule::unique('blogs', 'slug')->ignore($this->blog->id)
-            ],
             'content' => [
                 'required',
             ],
@@ -103,25 +90,43 @@ class EditBlog extends Component
 
         ]);
 
-        $path = $this->featured_image->store('blog', 'public');
+        if (file_exists(storage_path($this->blog->featured_image)))
+        {
+            unlink(storage_path($this->blog->featured_image));
+
+        }
+
 
         try {
 
 
             $this->blog->updateQuietly([
                 'title' => $this->title,
-                'meta_title' => $this->meta_description,
+                'meta_title' => $this->meta_title,
                 'meta_description' => $this->meta_description,
                 'content' => $this->content,
                 'is_published' => $this->is_published,
-                'slug' => Str::slug(Str::limit($this->seo_slug, 60, ''), '-'),
-                'featured_image' => $path,
                 'published_at' => isset($this->is_published) ? now() : null
             ]);
 
 
+            if ($this->featured_image)
+            {
+                $path =  $this->featured_image->store('blog', 'public');
+
+                $this->blog->updateQuietly([
+                    'featured_image' => $path
+                ]);
+            }
+
+            $this->blog->fresh();
+
+            $this->featured_image_path = $this->blog->featured_image_path;
+
+
+
         } catch (Exception $exception) {
-            unlink($path);
+
 
             dd($exception->getMessage());
         }

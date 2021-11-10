@@ -32,6 +32,7 @@ class CreateBlog extends Component
     public bool $is_published = true;
 
 
+    public $featured_image_path;
 
     public function updatingSeoSlug()
     {
@@ -48,7 +49,8 @@ class CreateBlog extends Component
     }
     public function render()
     {
-        return view('livewire.create-blog');
+        return view('livewire.create-blog')
+            ->extends('blog::layouts.app')->section('content');
     }
 
 
