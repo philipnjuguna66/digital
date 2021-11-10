@@ -24,7 +24,9 @@ class ListBlogs extends Component
             ->when(! is_null($this->search) && ! empty($this->search), function ($query){
                 $query->where('title','like','%'. $this->search. '%')
                     ->orWhere('content','like','%'. $this->search. '%');
-            })->cursor();
+            })
+            ->latest('id')
+            ->cursor();
         return view('livewire.list-blogs')->with([
             'blogs' => $blogs
         ])
