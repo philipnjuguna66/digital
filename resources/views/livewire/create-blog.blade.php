@@ -51,7 +51,7 @@
                             <div class="md:col-span-1">
                                 <h3 class="text-lg font-medium leading-6 text-gray-900">SERP Preview</h3>
                                 <div class="mt-1 text-sm text-gray-500">
-                                    <div class="text-green">{{ env('APP_URL'). '/blog/' . $seo_slug  }}</div>
+                                    <div class="text-green">{{ env('APP_URL'). 'blog/' . $seo_slug  }}</div>
                                     <div class="text-bold">
                                         <b class="text-green">{{ Str::title( Str::limit($title , 60 ,  ' ... '))  }}</b></div>
                                     <p class="text-sm">{{ Str::limit($meta_description , 160 , '...') }}</p>

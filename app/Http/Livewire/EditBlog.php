@@ -47,7 +47,7 @@ class EditBlog extends Component
             'meta_description' => $blog->meta_description,
             'content' => $blog->content,
             'is_published' => $blog->is_published,
-            'slug' => Str::slug(Str::limit($blog->seo_slug ?  : $this->title, 60, ''), '-'),
+            'slug' => $blog->slug,
             'published_at' => isset($blog->is_published) ? now() : null
 
         ]);
