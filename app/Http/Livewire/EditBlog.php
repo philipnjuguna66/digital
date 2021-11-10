@@ -89,9 +89,8 @@ class EditBlog extends Component
             //  'featured_image.dimensions' => 'Images should have a maximum width of 500 and height of 800'
 
         ]);
-        dd(storage_path($this->blog->featured_image));
 
-        if (file_exists(storage_path($this->blog->featured_image)))
+        if (file_exists((DIRECTORY_SEPARATOR.'storage'. DIRECTORY_SEPARATOR.  $this->blog->featured_image)))
         {
             unlink(storage_path($this->blog->featured_image));
 
