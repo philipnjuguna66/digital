@@ -24,7 +24,7 @@
                             <div class="dropdown-menu" role="menu">
                                 <a class="dropdown-item" href="{{ route('manage.blog.edit', $blog) }}">Edit</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="{{ route('manage.blog.show', $blog) }}">View</a>
+                                <a class="dropdown-item" href="{{ route('blog.show', ['blog' => $blog]) }}">View</a>
                             </div>
                         </div>
                     </div>

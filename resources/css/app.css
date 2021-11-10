@@ -1,4 +1,3 @@
-@import "search.css";
-@import "custom.css";
-@import "styles.css";
-@import "plugins.css";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';

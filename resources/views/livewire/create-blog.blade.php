@@ -1,7 +1,7 @@
 <div>
 
 
-    <div class="card card-default mt-4 mr-6 bg-gray-400">
+    <div class="card card-default mt-4 mr-6 bg-gray-100">
         <div class="card-header">
 
 
@@ -36,13 +36,14 @@
                         <!-- /.form-group -->
                         <div class="form-group" wire:ignore >
                             <label>Content</label>
-                            <div id="editor">
-                                {!! $content !!}
+
+                            <textare id="editor"> {!! $content !!}</textare>
+
 
                                 <span class="text-red-600">
                                     @error('content') {{  $message }} @enderror
                                 </span>
-                            </div>
+
                         </div>
                         <!-- /.form-group -->
                         <div class="form-group">
@@ -143,19 +144,22 @@
 </div>
 
 @push('page_scripts')
-    <script src="{{ asset('js/ckeditor.js') }}"></script>
-
-    <script>
-
-        ClassicEditor
-            .create(document.querySelector('#editor'), {
-                licenseKey: 'HgBZE6lK9xLvaPLEYvc3S3m005Qo5R4aIgeQ7cG1ftTpt4Mp9sTRa9ZK24Y8',
-                sidebar: {
-                    container: document.querySelector('.sidebar')
-                },
+    <script src="https://cdn.ckeditor.com/4.16.2/standard-all/ckeditor.js"></script>
 
 
-            })
+    <script type="module">
+
+        CKEDITOR.disableAutoInline = true;
+
+        var editor = CKEDITOR.replace('editor');
+
+        editor.on('change',function(){
+        @this.set('content', editor.getData());
+        });
+
+        console.log(editor)
+        /*ClassicEditor
+            .create(document.querySelector('#editor'))
             .then(editor => {
                 editor.model.document.on('change:data', () => {
                     console.log(editor.getData())
@@ -167,7 +171,7 @@
                 console.error('Please, report the following error on https://github.com/ckeditor/ckeditor5/issues with the build id and the error stack trace:');
                 console.warn('Build id: fsy8957et48w-nohdljl880ze');
                 console.error(error);
-            });
+            });*/
 
 
     </script>
