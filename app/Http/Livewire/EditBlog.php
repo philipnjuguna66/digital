@@ -47,7 +47,7 @@ class EditBlog extends Component
             'meta_description' => $blog->meta_description,
             'content' => $blog->content,
             'is_published' => $blog->is_published,
-            'slug' => $blog->slug,
+            'seo_slug' => $blog->slug,
             'published_at' => isset($blog->is_published) ? now() : null
 
         ]);
