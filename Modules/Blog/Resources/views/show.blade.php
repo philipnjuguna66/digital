@@ -46,6 +46,7 @@
                     <div class="col-lg-8 col-md-12 mb-1-9 mb-lg-0">
                         <div class="posts-wrapper">
                             <!-- post -->
+
                             <div class="post-content">
                                 <div class="post-meta">
                                     <div class="mb-1-6 mb-md-1-9">
