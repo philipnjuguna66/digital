@@ -2,6 +2,7 @@
 
 
 use App\Http\Controllers\BlogController;
+use Google\Ads\GoogleAds\Util\EnvironmentalVariables;
 use Illuminate\Support\Facades\Route;
 
 use Spatie\Sitemap\SitemapGenerator;
@@ -61,7 +62,15 @@ Route::prefix('blog')->group(function (){
 
 
 Route::get('/contact-us', function () {
+
     return view('welcome');
+})->name('contact_us');
+
+
+
+Route::get('/keyword-generator', function () {
+
+    //return view('welcome');
 })->name('contact_us');
 
 
