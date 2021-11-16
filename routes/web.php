@@ -76,12 +76,12 @@ Route::get('/keyword-generator', function () {
 
 
 Route::get('/privacy', function () {
-    return view('welcome');
+    return view('privacy-policy');
 })->name('privacy');
 
 
 Route::get('/terms-and-condition', function () {
-    return view('welcome');
+    return view('terms_and_conditions');
 })->name('terms-and-conditions');
 
 
