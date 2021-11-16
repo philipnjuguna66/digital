@@ -1,5 +1,18 @@
 <x-app-layout>
 
+    <section class="page-title-section top-position bg-primary">
+        <div class="container z-index-1 position-relative">
+        </div>
+        <img src="{{ asset('img/banner/page-title2.png') }}" class="position-absolute top-0 start-0" alt="...">
+        <img src="{{ asset('img/banner/page-title1.png') }}" class="position-absolute bottom-0 end-0" alt="...">
+        <div class="home_bubble">
+            <div class="square-shape2"></div>
+            <div class="bubble b_three"></div>
+            <div class="square-shape1 d-none d-sm-block"></div>
+            <div class="bubble b_six d-none d-sm-block"></div>
+        </div>
+    </section>
+
     <section class="blogs">
         <div class="container">
             <div class="row">
