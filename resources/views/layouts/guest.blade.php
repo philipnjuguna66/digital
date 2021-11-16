@@ -17,9 +17,6 @@
     <!-- Scripts -->
     <script src="{{ mix('js/app.js') }}" defer></script>
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8438942375783163"
-            crossorigin="anonymous"></script>
-
     <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
     <script async custom-element="amp-auto-ads"
             src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">

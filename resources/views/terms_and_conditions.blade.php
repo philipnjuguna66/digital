@@ -1,4 +1,5 @@
-<section class="blogs">
+<x-guest-layout>
+    <section class="blogs">
     <div class="container">
         <div class="row">
             <!-- blog left -->
@@ -203,3 +204,4 @@
         </div>
     </div>
 </section>
+</x-guest-layout>
