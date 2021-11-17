@@ -73,7 +73,7 @@ Route::get('/contact-us', function () {
 
 Route::get('/keyword-generator', function () {
 
-   dd( (new \Google\Ads\GoogleAds\Util\EnvironmentalVariables())->getHome());
+   dd( GenerateKeywordIdeas::main());
 
 
     //return view('welcome');

@@ -45,7 +45,7 @@ class   GenerateKeywordIdeas
 
 
         // Generate a refreshable OAuth2 credential for authentication.
-        $oAuth2Credential = (new OAuth2TokenBuilder())->fromFile()->build();
+        $oAuth2Credential = (new OAuth2TokenBuilder())->fromFile(public_path('google_ads_php.ini'))->build();
 
 
         // Construct a Google Ads client configured from a properties file and the
