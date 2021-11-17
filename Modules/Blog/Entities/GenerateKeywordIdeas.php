@@ -17,7 +17,7 @@ use Google\Ads\GoogleAds\V9\Services\UrlSeed;
 use Google\ApiCore\ApiException;
 
     /** This example generates keyword ideas from a list of seed keywords or a seed page URL. */
-class GenerateKeywordIdeas
+class   GenerateKeywordIdeas
 {
     private const CUSTOMER_ID = 4444518527;
     // Location criteria IDs. For example, specify 21167 for New York. For more information
