@@ -73,7 +73,7 @@ Route::get('/contact-us', function () {
 
 Route::get('/keyword-generator', function () {
 
-   dd( GenerateKeywordIdeas::main());
+   dd( json_decode(GenerateKeywordIdeas::main()));
 
 
     //return view('welcome');
