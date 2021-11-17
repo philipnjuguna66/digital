@@ -2,10 +2,13 @@
 
 
 use App\Http\Controllers\BlogController;
-use Google\Ads\GoogleAds\Util\EnvironmentalVariables;
+
 use Illuminate\Support\Facades\Route;
 
+use Modules\Blog\Entities\GenerateKeywordIdeas;
 use Spatie\Sitemap\SitemapGenerator;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -69,6 +72,9 @@ Route::get('/contact-us', function () {
 
 
 Route::get('/keyword-generator', function () {
+
+   dd( GenerateKeywordIdeas::main());
+
 
     //return view('welcome');
 })->name('contact_us');

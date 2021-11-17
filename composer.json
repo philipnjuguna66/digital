@@ -9,22 +9,22 @@
     "license": "MIT",
     "require": {
         "php": "^7.4|^8.0",
+        "doctrine/dbal": "~2.3",
         "fruitcake/laravel-cors": "^2.0",
+        "googleads/google-ads-php": "^12.1",
         "guzzlehttp/guzzle": "^7.0.1",
         "guzzlehttp/psr7": "1.8",
+        "infyomlabs/adminlte-templates": "^3.0",
+        "infyomlabs/laravel-generator": "^3.0",
         "laravel/framework": "^8.54",
         "laravel/jetstream": "^2.3",
         "laravel/sanctum": "^2.6",
         "laravel/tinker": "^2.5",
+        "laravelcollective/html": "^6.2",
         "livewire/livewire": "^2.5",
         "maatwebsite/excel": "^3.1",
         "nwidart/laravel-modules": "^8.2",
-        "spatie/laravel-sitemap": "^5.9",
-        "infyomlabs/laravel-generator": "^3.0",
-        "doctrine/dbal": "~2.3",
-        "googleads/google-ads-php": "^12.0",
-        "laravelcollective/html": "^6.2",
-        "infyomlabs/adminlte-templates": "^3.0"
+        "spatie/laravel-sitemap": "^5.9"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
