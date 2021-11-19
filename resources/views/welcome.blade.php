@@ -243,23 +243,7 @@
                             majority have suffered alteration in some form, by injected humour, or randomised words
                             which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum,
                             you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
-                        <div class="align-items-top d-inline-flex text-start shadow py-3 px-4 rounded-lg bg-white">
 
-                            <div class="ms-3 font-weight-500">
-                                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8438942375783163"
-                                        crossorigin="anonymous"></script>
-                                <!-- Display Ads -->
-                                <ins class="adsbygoogle"
-                                     style="display:block"
-                                     data-ad-client="ca-pub-8438942375783163"
-                                     data-ad-slot="6377075317"
-                                     data-ad-format="auto"
-                                     data-full-width-responsive="false"></ins>
-                                <script>
-                                    (adsbygoogle = window.adsbygoogle || []).push({});
-                                </script>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
