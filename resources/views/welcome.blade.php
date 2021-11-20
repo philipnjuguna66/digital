@@ -16,16 +16,21 @@
                 <!-- left banner text -->
                 <div class="col-lg-6">
                     <div class="header-text w-md-75 w-lg-100 pb-5 pb-lg-0">
-                        <h1 class="wow fadeInUp text-white mb-4 display-lg-8 w-xl-90" data-wow-delay=".1s">Manage your
-                            business strategy with SEO digital agency</h1>
+                        <h1 class="wow fadeInUp text-white mb-4 text-sm" data-wow-delay=".1s">
+                           Drive Revenue with a Nairobi (SEARCH ENGINE OPTIMIZATION) SEO and Marketing Company
+
+                        </h1>
                         <p class="mb-lg-2-0 w-90 w-md-80 opacity9 wow fadeInUp text-white" data-wow-delay=".2s">Our
-                            passion to work hard and deliver excellent results. It could solve the needs of your
-                            customers and develop innovation.</p>
-                        <div class="wow fadeInUp" data-wow-delay=".4s"><a href="#!"
-                                                                          class="butn white me-2 align-middle"><span>Get Started</span></a>
-                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=lB6Ds9yz71I">
+                            Your Trusted Company for Proven, Measurable SEO Results.
+                            We are an innovative, open-minded SEO management firm situated in Nairobi, Kenya.
+
+                        </p>
+                        <div class="wow fadeInUp" data-wow-delay=".4s">
+                            <a href="{{ route('contact_us') }}" class="butn white me-2 align-middle"><span>Get Started</span></a>
+                           {{-- <a class="popup-youtube" href="https://www.youtube.com/watch?v=lB6Ds9yz71I">
                                 <span class="btn-play-theme video_btn align-middle"><i class="fa fa-play"></i></span>
-                            </a></div>
+                            </a>--}}
+                        </div>
                     </div>
                 </div>
                 <!-- end banner text -->
@@ -33,7 +38,7 @@
                 <!-- right image banner -->
                 <div class="col-lg-6 text-center text-lg-end position-relative">
                     <div class="banner-img">
-                        <img src="{{ asset('images/digital_marketing.svg') }}" alt="...">
+                        <img src="{{ asset('images/digital_marketing.svg') }}" alt="Digital Marketing Kenya">
                     </div>
                 </div>
                 <!-- end right image banner -->
@@ -65,14 +70,15 @@
     <!-- ABOUTUS
     ================================================== -->
     <section>
-        <div class="container">
+        <div class="container mt-0">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12 order-2 order-lg-1 wow fadeInLeft" data-wow-delay=".1s">
                     <div class="pe-lg-1-9">
-                        <h2 class="h1 font-weight-700 mb-1-6">Develop your occupation with our SEO organization</h2>
-                        <p class="mb-1-6">For new companies and developing organizations, an online expert can build up
-                            a digital advertising intend to assist you with developing and hold an upbeat customer
-                            base.</p>
+                        <h2 class="h1 font-weight-700 mb-1-6">Develop your Brand awareness with a Nairobi SEO Company</h2>
+                        <p class="mb-1-6">
+                            You most likely found this SEO page by searching for Nairobi SEO and Marketing Agency on Google. Because we practice what we preach and understand the most significant Google ranking criteria, you found Digital Marketing Kenya.
+                            Google ranks us #1 because of our customized month-to-month SEO approach, and we will do the same for your brand.
+                        </p>
                         <div class="media mb-1-9">
                             <div class="icon-box light-pink">
                                 <i class="ti-time"></i>
@@ -88,7 +94,7 @@
                                 <i class="ti-user"></i>
                             </div>
                             <div class="media-body ms-3 ms-lg-4">
-                                <h4 class="h5">Our Expert Professionals</h4>
+                                <h4 class="h5">Our SEO And Marketing Expert Professionals</h4>
                                 <p class="mb-0">They are hand chosen by our firm as people that keep an undeniable
                                     degree of honesty and are learned.</p>
                             </div>
@@ -237,12 +243,14 @@
                 <div class="col-lg-6 wow fadeInRight" data-wow-delay=".1s">
                     <div class="ps-lg-5">
                         <h2 class="h1 mb-1-6">Advanced marketing that drives results</h2>
-                        <p class="lead fst-italic font-weight-500">More than 10 years assisting organizations with
-                            coming to their monetary and marking objectives.</p>
-                        <p class="mb-1-9">There are many variations of passages of Lorem Ipsum available, but the
-                            majority have suffered alteration in some form, by injected humour, or randomised words
-                            which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum,
-                            you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+
+                        <p class="mb-1-9">
+                            We are obsessed about Search Engine Optimization (SEO). No, we really do.
+                            We rejected the black hat techniques of Search Engine Optimization formulas for success,
+                            and resolved to be the greatest at what we do from the start. We utilized our
+                            skills to develop our beliefs, structure, method, and customized digital marketing and SEO techniques
+                            in Nairobi Kenya.
+                        </p>
 
                     </div>
                 </div>
@@ -258,15 +266,14 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 order-2 order-lg-1 wow fadeInLeft" data-wow-delay=".1s">
                     <div class="pe-lg-5">
-                        <h2 class="h1 mb-1-6">Be at the top & get more traffic to your website.</h2>
-                        <p class="lead">Our kin characterize us and show what our identity is. At the point when we set
-                            individuals to work with the customer.</p>
-                        <ul class="list-style1 ps-0">
+                        <h2 class="h1 mb-1-6">Be at the top & get more traffic to your website In Nairobi Kenya.</h2>
+                        <p class="lead">You need a SEO company to help grow your business. We are more than simply an SEO company; we are a partner in your company's success.</p>
+                       {{-- <ul class="list-style1 ps-0">
                             <li>Quick Access</li>
                             <li>Easily Manage</li>
                             <li>24/7 Support</li>
-                        </ul>
-                        <a href="#!" class="butn mt-1-9"><span>Get Started Now</span></a>
+                        </ul>--}}
+                        <a href="{{ route('contact_us') }}" class="butn mt-1-9"><span>Get Started Now</span></a>
                     </div>
                 </div>
                 <div class="col-lg-6 h-100 order-1 order-lg-2 mb-1-9 mb-lg-0 wow fadeInRight" data-wow-delay=".1s">
@@ -285,60 +292,63 @@
     <section class="bg-primary position-relative">
         <div class="container">
             <div class="section-heading heading-white mb-2-3 mb-lg-2-9 wow fadeInDown" data-wow-delay=".2s">
-                <h6 class="text-white"><span>Work Flow</span></h6>
-                <h2 class="mb-0 h1 text-white">Our working process</h2>
+                <h6 class="text-white"><span>Our SEO Work Flow</span></h6>
+                <h2 class="mb-0 h1 text-white">STEPS TO A HIGHER RANK ON GOOGLE</h2>
             </div>
             <div class="row">
                 <div class="col-lg-3 col-md-6 mb-1-9 mb-md-2-5 mb-lg-0 wow fadeInUp" data-wow-delay=".2s">
-                    <div class="process-wrapper">
+                    {{--<div class="process-wrapper">
                         <div class="process-icon">
                             <img class="mx-auto d-block w-60 w-sm-70 w-md-65 w-lg-70" src="img/icons/icon-04.svg"
                                  alt="...">
                             <span class="process-steps">01</span>
                         </div>
-                    </div>
+                    </div>--}}
                     <div class="text-center">
-                        <h3 class="text-white h5 mb-3">01. Research Project</h3>
-                        <p class="text-white mb-0">We have ordered the main data to think about start your examination
-                            project.</p>
+                        <h3 class="text-white h5 mb-3">01.SCHEDULE A CALL</h3>
+                        <p class="text-white mb-0">
+                            When you're not getting the Google rankings and company success you expect,
+                            it's time to consult with an SEO expert.
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-1-9 mb-md-2-5 mb-lg-0 wow fadeInUp" data-wow-delay=".4s">
-                    <div class="process-wrapper">
+                   {{-- <div class="process-wrapper">
                         <div class="process-icon process-border">
                             <img class="mx-auto d-block w-60 w-sm-70 w-md-65 w-lg-70" src="img/icons/icon-05.svg"
                                  alt="...">
                             <span class="process-steps">02</span>
                         </div>
-                    </div>
+                    </div>--}}
                     <div class="text-center">
-                        <h3 class="text-white h5 mb-3">02. Find Ideas</h3>
-                        <p class="text-white mb-0">you've likely thought to be an assortment of private venture
-                            thoughts.</p>
+                        <h3 class="text-white h5 mb-3">02. CUSTOM STRATEGY</h3>
+                        <p class="text-white mb-0">Discuss your objectives on the call. Before you hang up,
+                            you'll have the blueprint for a plan that will propel you to the top of the search results.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-1-9 mb-md-0 wow fadeInUp" data-wow-delay=".6s">
-                    <div class="process-wrapper">
+                    {{--<div class="process-wrapper">
                         <div class="process-icon process-border">
                             <img class="mx-auto d-block w-60 w-sm-70 w-md-65 w-lg-70" src="img/icons/icon-06.svg"
                                  alt="...">
                             <span class="process-steps">03</span>
                         </div>
-                    </div>
+                    </div>--}}
                     <div class="text-center">
                         <h3 class="text-white h5 mb-3">03. Start Optimize</h3>
-                        <p class="text-white mb-0">your site for genuine individuals causes you acquire your guests
-                            trust.</p>
+                        <p class="text-white mb-0">
+                            Begin creating more traffic and interest in your company. It's the year 2021, and it's time to see a favorable return on your investment.
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".8s">
-                    <div class="process-wrapper">
+                    {{--<div class="process-wrapper">
                         <div class="process-icon process-border">
                             <img class="mx-auto d-block w-60 w-sm-70 w-md-65 w-lg-70" src="img/icons/icon-07.svg"
                                  alt="...">
                             <span class="process-steps">04</span>
                         </div>
-                    </div>
+                    </div>--}}
                     <div class="text-center">
                         <h3 class="text-white h5 mb-3">04. Reach Target</h3>
                         <p class="text-white mb-0">Build up a promoting technique to build brand and arrive at your
@@ -363,78 +373,11 @@
         <div class="container">
             <div class="section-heading mb-2-3 mb-lg-2-9 wow fadeInDown" data-wow-delay=".2s">
                 <h6 class="text-secondary"><span>Blog Posts</span></h6>
-                <h2 class="mb-0 h1">Our latest blog</h2>
+                <h2 class="mb-0 h1">NAIROBI SEO COMPANY TO GROW YOUR COMPANY</h2>
             </div>
             <div class="row">
-                <div class="col-md-6 col-lg-4 mb-1-6 mb-md-1-9 mb-lg-0 wow fadeInUp" data-wow-delay=".2s">
-                    <article class="card card-style2 border-none h-100">
-                        <div class="card-img">
-                            <img src="img/blog/blog-01.jpg" alt="...">
-                        </div>
-                        <div class="blog-info-tag">
-                            <div class="text-end"><a href="#!" class="bg-light-pink">Optimization</a></div>
-                        </div>
-                        <div class="card-body">
-                            <small class="font-weight-500">05 Feb. 2021</small>
-                            <h3 class="h4 mt-2 mb-3"><a href="blog-detail.html">This story behind Seo will haunt you
-                                    forever.</a></h3>
-                            <p class="mb-3">It supplies data on generally look for explicit catchphrase terms, so you
-                                can measure how significant and serious they are.</p>
-                            <div class="blog-author">
-                                <div class="blog-author-img">
-                                    <img src="img/avatar/avatar-05.jpg" alt="...">
-                                </div>
-                                <span class="text-light-pink">Linda Bivens</span>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-1-6 mb-md-1-9 mb-lg-0 wow fadeInUp" data-wow-delay=".4s">
-                    <article class="card card-style2 border-none h-100">
-                        <div class="card-img">
-                            <img src="img/blog/blog-02.jpg" alt="...">
-                        </div>
-                        <div class="blog-info-tag">
-                            <div class="text-end"><a href="#!" class="bg-yellow">Marketing</a></div>
-                        </div>
-                        <div class="card-body">
-                            <small class="font-weight-500">01 Feb 2021</small>
-                            <h3 class="h4 mt-2 mb-3"><a href="blog-detail.html">The seven secrets that you shouldn't
-                                    know about Seo.</a></h3>
-                            <p class="mb-3">It supplies data on generally look for explicit catchphrase terms, so you
-                                can measure how significant and serious they are.</p>
-                            <div class="blog-author">
-                                <div class="blog-author-img">
-                                    <img src="img/avatar/avatar-06.jpg" alt="...">
-                                </div>
-                                <span class="text-yellow">Ivo Janata</span>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".6s">
-                    <article class="card card-style2 border-none h-100">
-                        <div class="card-img">
-                            <img src="img/blog/blog-03.jpg" alt="...">
-                        </div>
-                        <div class="blog-info-tag">
-                            <div class="text-end"><a href="#!" class="bg-blue">SEO Analysis</a></div>
-                        </div>
-                        <div class="card-body">
-                            <small class="font-weight-500">29 Jan 2021</small>
-                            <h3 class="h4 mt-2 mb-3"><a href="blog-detail.html">Things that make you love and hate
-                                    Seo.</a></h3>
-                            <p class="mb-3">It supplies data on generally look for explicit catchphrase terms, so you
-                                can measure how significant and serious they are.</p>
-                            <div class="blog-author">
-                                <div class="blog-author-img">
-                                    <img src="img/avatar/avatar-07.jpg" alt="...">
-                                </div>
-                                <span class="text-blue">Lisa Michalski</span>
-                            </div>
-                        </div>
-                    </article>
-                </div>
+                <livewire:site.latest-blog/>
+
             </div>
         </div>
     </section>
