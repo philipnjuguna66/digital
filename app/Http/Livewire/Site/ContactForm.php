@@ -41,6 +41,14 @@ class ContactForm extends Component
             $mail->to('info@digitalmarketingkenya.com')
                 ->subject($this->subject);
         });
+
+        $this->fill([
+            'name' => '',
+            'tel' => '',
+            'email' => '',
+            'message' => '',
+            'subject' => '',
+        ]);
     }
     public function render()
     {
