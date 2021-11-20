@@ -31,6 +31,7 @@
 
 @include('layouts.footer_js')
 
+@livewireScripts
 <!-- all js include end -->
 </body>
 

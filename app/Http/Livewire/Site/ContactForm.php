@@ -17,7 +17,7 @@ class ContactForm extends Component
         'name' => 'required|string',
         'email' => 'required|email',
         'subject' => 'required|string',
-        'tel' => 'required|numeric',
+        'tel' => 'required',
         'message' => 'required|string',
     ];
 
@@ -28,6 +28,7 @@ class ContactForm extends Component
 
     public function submit()
     {
+
         $this->validate();
 
         $message = $this->message;

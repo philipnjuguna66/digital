@@ -54,11 +54,7 @@
 <!-- custom scripts -->
 <script src="{{ asset('js/main.js')}}"></script>
 
-<!-- form plugins js -->
-<script src="{{ asset('quform/js/plugins.js')}}"></script>
 
-<!-- form scripts js -->
-<script src="{{ asset('quform/js/scripts.js')}}"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150989765-1"></script>
 <script>
