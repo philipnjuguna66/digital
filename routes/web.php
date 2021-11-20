@@ -66,7 +66,7 @@ Route::prefix('blog')->group(function (){
 
 Route::get('/contact-us', function () {
 
-    return view('welcome');
+    return view('site.contact');
 })->name('contact_us');
 
 
@@ -77,7 +77,7 @@ Route::get('/keyword-generator', function () {
 
 
     //return view('welcome');
-})->name('contact_us');
+})->name('keyword_generator');
 
 
 
