@@ -41,5 +41,9 @@ class AppServiceProvider extends ServiceProvider
             list($property, $content) = explode(',', $expression, 2);
             return  "<?php echo '<meta property=\"twitter:' . $property . '\" content=\"' . $content . '\">' . \"\n\"; ?>";
         });
+        Blade::directive('article', function ($expression) {
+            list($property, $content) = explode(',', $expression, 2);
+            return  "<?php echo '<meta property=\"article:' . $property . '\" content=\"' . $content . '\">' . \"\n\"; ?>";
+        });
     }
 }

@@ -72,7 +72,7 @@
                                     </ul>
                                 </div>
                                 <div class="mb-1-6 mb-md-1-9">
-                                    {!! $blog->content !!}
+                                    {!! Str::of( $blog->content)->replace("\\","") !!}
 
                                 </div>
 

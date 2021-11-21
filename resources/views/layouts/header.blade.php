@@ -4,12 +4,22 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="@yield('description','')">
 
-     @yield('metas')
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
-<!-- title  -->
+    <link rel="canonical" href="{{ url()->current() }}" />
+
+
+    <!-- title  -->
     <title>@yield('title','')</title>
+
+    <meta name="description" content="@yield('description','')">
+    <meta name="og:site_name" content="Digital Marketing, SEO and Web Developers in Nairobi Kenya ">
+    <meta name="og:locale" content="en_US">
+    <meta name="og:type" content="website">
+
+@yield('metas')
+
 
     <!-- favicon -->
     <link rel="shortcut icon" href="{{ asset('img/logos/favicon.png') }}"/>

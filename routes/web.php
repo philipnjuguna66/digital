@@ -44,7 +44,7 @@ Route::prefix('services')->group(function (){
     })->name('seo_marketing');
 
     Route::get('/web-design', function () {
-        return view('welcome');
+        return view('site.web_design');
     })->name('web_design');
 
 

@@ -47,7 +47,7 @@ class ContactForm extends Component
             'tel' => '',
             'email' => '',
             'message' => '',
-            'subject' => '',
+            'subject    ' => '',
         ]);
     }
     public function render()
