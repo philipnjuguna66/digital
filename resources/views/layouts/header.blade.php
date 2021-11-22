@@ -20,9 +20,9 @@
     <title>@yield('title','')</title>
 
     <meta name="description" content="@yield('description','')">
-    <meta name="og:site_name" content="Digital Marketing, SEO and Web Developers in Nairobi Kenya ">
-    <meta name="og:locale" content="en_US">
-    <meta name="og:type" content="website">
+    @og('site_name','Digital Marketing, SEO and Web Developers in Nairobi Kenya')
+    @og('locale','EN_US')
+    @og('type','website')
 
 @yield('metas')
 
