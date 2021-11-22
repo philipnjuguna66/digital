@@ -61,7 +61,7 @@
     "@type" : "PostalAddress",
     "streetAddress" : "UniCity Mall (KU)",
     "addressLocality" : "Thika Road - Nairobi"
-  },
+  }
 }
 </script>
 </head>
