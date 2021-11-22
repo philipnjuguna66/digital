@@ -17,7 +17,7 @@
               "name" : "{{ $blog->title }}",
                "datePublished" : "{{ $blog->created_at }}",
                 "image" : "{{ $blog->featured_image_path }}",
-                "articleBody" : "{!! Str::of( $blog->content)->replace("\\","") !!}"
+                "articleBody" : "{!! Str::of( $blog->exerpt)->replace("\\","") !!}"
 
                 }
 
