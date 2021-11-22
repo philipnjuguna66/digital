@@ -7,6 +7,37 @@
         @og('description','The Digital Marketing Kenya will improve your website’s organic rankings using proven, white-hat SEO tactics. We help you grow your business online. Call for a Free Quote!')
         @twitter('title','SEO Nairobi • Local, Nairobi SEO Company & Nairobi web Design')
         @twitter('description','The Digital Marketing Kenya will improve your website’s organic rankings using proven, white-hat SEO tactics. We help you grow your business online. Call for a Free Quote!')
+
+        <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "What is SEO",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "SEO stands for search engine optimization. SEO is the process of taking steps to help a website or piece of content rank higher on Google"
+    }
+  },{
+    "@type": "Question",
+    "name": "What is local SEO",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Local SEO stands for “local search engine optimization”, and as any business knows, attracting local customers can be key to success or failure:"
+    }
+  },{
+    "@type": "Question",
+    "name": "Who Needs Local SEO?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Any business with a physical location that customers visit (for example bars, law offices and grocery stores)
+Any business that serves a defined geographical area (for example restaurants who deliver)
+Any business that travels to their customers (for example plumbers and locksmiths), which are known as ‘service area businesses’"
+    }
+  }]
+}
+</script>
     @endsection
     <div class="main-banner bg-primary top-position position-relative">
         <div class="container">
