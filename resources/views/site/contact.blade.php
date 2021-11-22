@@ -1,4 +1,48 @@
 <x-app-layout>
+
+
+    @section('title','Contact Web Design | Nairobi Internet Developers')
+    @section('description','Nairobi Web Design firm offering Inbound Marketing, Online Lead Generation, internet marketing, SEO, ecommerce, custom web design, re-design, web hosting, networking, custom Web application development.')
+
+    @section('metas')
+        @og('title','Contact Web Design | Nairobi Internet Developers')
+        @og('description','Nairobi Web Design firm offering Inbound Marketing, Online Lead Generation, internet marketing, SEO, ecommerce, custom web design, re-design, web hosting, networking, custom Web application development.')
+
+        @twitter('title','Contact Web Design | Nairobi Internet Developers')
+        @twitter('description','Nairobi Web Design firm offering Inbound Marketing, Online Lead Generation, internet marketing, SEO, ecommerce, custom web design, re-design, web hosting, networking, custom Web application development.')
+
+        <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "What is SEO",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "SEO stands for search engine optimization. SEO is the process of taking steps to help a website or piece of content rank higher on Google"
+    }
+  },{
+    "@type": "Question",
+    "name": "What is local SEO",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Local SEO stands for “local search engine optimization”, and as any business knows, attracting local customers can be key to success or failure:"
+    }
+  },{
+    "@type": "Question",
+    "name": "Who Needs Local SEO?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Any business with a physical location that customers visit (for example bars, law offices and grocery stores)
+Any business that serves a defined geographical area (for example restaurants who deliver)
+Any business that travels to their customers (for example plumbers and locksmiths), which are known as ‘service area businesses’"
+    }
+  }]
+}
+</script>
+@endsection
+
     <!-- PAGE TITLE
       ================================================== -->
     <section class="page-title-section top-position bg-primary">
