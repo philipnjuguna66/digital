@@ -8,6 +8,12 @@
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
     <link rel="canonical" href="{{ url()->current() }}" />
+    <link rel="alternate" hreflang="sw" href="{{ url()->current() }}" />
+    <link rel="alternate" hreflang="en-gb" href="{{ url()->current() }}" />
+    <link rel="alternate" hreflang="en-us" href="{{ url()->current() }}" />
+    <link rel="alternate" hreflang="de" href="{{ url()->current() }}" />
+    <link rel="alternate" hreflang="hi" href="{{ url()->current() }}" />
+
 
 
     <!-- title  -->
