@@ -2,7 +2,9 @@
 <html lang="en">
 @include('layouts.header')
 
+
 <body>
+
 
 <!-- PAGE LOADING
 ================================================== -->
