@@ -20,8 +20,8 @@
     @og('site_name','Digital Marketing, SEO and Web Developers in Nairobi Kenya')
     @og('locale','EN_US')
     @og('type','website')
-@yield('metas')
-
+     @yield('metas')
+  <meta name="ahrefs-site-verification" content="4f6a2f8f98cae2bff2f40291fb87d577e4d5ddc8633c83f9f4de1c4bacaedcf0">
 
     <!-- favicon -->
     <link rel="shortcut icon" href="{{ asset('img/logos/favicon.png') }}"/>
