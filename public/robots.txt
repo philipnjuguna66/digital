@@ -1,7 +1,1 @@
 User-agent: *
-
-User-agent: AhrefsSiteAudit
-Allow: /
-
-User-agent: AhrefsBot
-Allow: /
