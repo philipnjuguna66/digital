@@ -147,6 +147,8 @@ Any business that travels to their customers (for example plumbers and locksmith
             </div>
         </div>
     </section>
-
-    <!-- FOOTER
+    @push('scripts')
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8438942375783163"
+                crossorigin="anonymous"></script>
+    @endpush
 </x-app-layout>
