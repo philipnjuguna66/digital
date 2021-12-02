@@ -17,7 +17,7 @@
     <section class="page-title-section top-position bg-primary">
         <div class="container z-index-1 position-relative">
             <div class="row text-center">
-                <div class="col-md-12">
+                <div class="col-md-12 text-sm">
                     <h1>  We are one of the best SEO agencies in Kenya. With over 2 years of experience, we have honed our craft to provide you with marketing services that will help you achieve your marketing goals.
                     </h1>
                 </div>
