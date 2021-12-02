@@ -40,7 +40,7 @@ Route::prefix('services')->group(function (){
     })->name('seo_optimization');
 
     Route::get('/seo-marketing', function () {
-        return view('welcome');
+        return view('site.seo_marketing');
     })->name('seo_marketing');
 
     Route::get('/web-design', function () {
