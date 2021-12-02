@@ -103,12 +103,13 @@ class CreateBlog extends Component
             ]);
 
 
+            return "success";
         }
         catch (\Exception $exception)
         {
            // unlink($path);
 
-           // dd( $exception->getMessage());
+            dd( $exception->getMessage());
         }
 
 
