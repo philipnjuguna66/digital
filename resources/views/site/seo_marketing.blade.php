@@ -18,7 +18,8 @@
         <div class="container z-index-1 position-relative">
             <div class="row text-center">
                 <div class="col-md-12">
-                    <h1>What is SEO Optimization</h1>
+                    <h1>  We are one of the best SEO agencies in Kenya. With over 2 years of experience, we have honed our craft to provide you with marketing services that will help you achieve your marketing goals.
+                    </h1>
                 </div>
                 <div class="col-md-12">
                     <ul class="mb-0 ps-0">
@@ -49,9 +50,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="ps-lg-1-9">
-                        <h2 class="h1 mb-1-6">
-                            We are one of the best SEO agencies in Kenya. With over 2 years of experience, we have honed our craft to provide you with marketing services that will help you achieve your marketing goals.
-                        </h2>
+
                         <p class="alt-font font-weight-600 mb-1-6">
                             SEO Optimization has become increasingly important as more and more people are using the internet.
                             The goal of SEO optimization is to make sure that your
