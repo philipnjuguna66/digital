@@ -85,7 +85,7 @@ class CreateBlog extends Component
 
         ]);
 
-        $path = $this->featured_image->store('blog','public');
+       // $path = $this->featured_image->store('blog','public');
 
         try {
 
@@ -98,7 +98,7 @@ class CreateBlog extends Component
                 'content' => $this->content,
                 'is_published' => $this->is_published,
                 'slug' => Str::slug(Str::limit($this->seo_slug , 60 , '') , '-'),
-                'featured_image' => $path,
+                'featured_image' => null,
                 'published_at' => isset($this->is_published) ? now() :  null
             ]);
 
@@ -106,9 +106,9 @@ class CreateBlog extends Component
         }
         catch (\Exception $exception)
         {
-            unlink($path);
+           // unlink($path);
 
-            dd( $exception->getMessage());
+           // dd( $exception->getMessage());
         }
 
 
