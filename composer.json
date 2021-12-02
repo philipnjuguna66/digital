@@ -24,7 +24,8 @@
         "livewire/livewire": "^2.5",
         "maatwebsite/excel": "^3.1",
         "nwidart/laravel-modules": "^8.2",
-        "spatie/laravel-sitemap": "^5.9"
+        "spatie/laravel-sitemap": "^5.9",
+        "facebook/php-business-sdk": "5.0.5"
     },
     "require-dev": {
         "facade/ignition": "^2.5",

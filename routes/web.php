@@ -36,7 +36,7 @@ Route::get('/about-us', function () {
 
 Route::prefix('services')->group(function (){
     Route::get('/seo-optimization', function () {
-        return view('welcome');
+        return view('site.seo_optimization');
     })->name('seo_optimization');
 
     Route::get('/seo-marketing', function () {
