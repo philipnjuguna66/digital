@@ -93,7 +93,7 @@ class CreateBlog extends Component
 
             Blog::create([
                 'title' => $this->title,
-                'meta_title' => $this->meta_description,
+                'meta_title' => $this->meta_title,
                 'meta_description' => $this->meta_description,
                 'content' => $this->content,
                 'is_published' => $this->is_published,
