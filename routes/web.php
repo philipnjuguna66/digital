@@ -29,9 +29,7 @@ Route::get('/sitemap.xml', function (){
 
 Route::get('/', [\App\Http\Controllers\HomeController::class,'index'])->name('home');
 
-Route::get('/about-us', function () {
-    return view('welcome');
-})->name('about_us');
+Route::get('/about-us', \App\Http\Livewire\Site\SeoAudit::class)->name('about_us');
 
 
 Route::prefix('services')->group(function (){

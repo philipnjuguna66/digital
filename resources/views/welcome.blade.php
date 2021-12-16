@@ -148,6 +148,7 @@ Any business that travels to their customers (for example plumbers and locksmith
                     <div class="row g-3">
                         <div class="col-6">
 
+
                             <div>
                                 <img class="rounded" src="{{ asset('images/about-02.jpeg') }}" alt="...">
                             </div>
@@ -315,8 +316,6 @@ Any business that travels to their customers (for example plumbers and locksmith
             </div>
         </div>
     </section>
-
-
 
     <!-- PROCESS
     ================================================== -->
