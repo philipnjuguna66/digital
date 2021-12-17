@@ -16,8 +16,8 @@ class SeoAudit extends Component
         $this->result = [];
 
         $response = Http::withHeaders([
-            "x-rapidapi-host" => "seo-fast-audit.p.rapidapi.com",
-            "x-rapidapi-key" =>  "01debfc655msh2c1e47d1ee8d67fp19d343jsna9e0b4530a31"
+            "x-rapidapi-host" => env('RAPID_API_HOST'),
+            "x-rapidapi-key" =>  env('RAPID_API_KEY')
         ])
             ->get("https://seo-fast-audit.p.rapidapi.com/?url={$this->url}");
 
